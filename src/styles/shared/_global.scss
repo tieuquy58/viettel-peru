@@ -1,0 +1,38 @@
+.btn,
+button {
+  outline: none !important;
+}
+
+.btn-positive {
+  @include button-variant($light-color, $primary-color, $primary-color);
+}
+
+.btn-outline {
+  @include button-variant($light-color, transparent, $light-color);
+}
+
+.btn-negative {
+  @include button-variant($text-color, $light-color, $light-color);
+}
+
+.dropdown-backdrop {
+  @media(max-width: $screen-sm-max) {
+    background-color: transparentize($color: $dark-color, $amount: 0.5);
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.form-control {
+  box-shadow: none;
+}

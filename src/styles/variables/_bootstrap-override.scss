@@ -1,0 +1,69 @@
+$font-family-base: $body-font;
+$body-bg: $light-color;
+
+$line-height-base: 1.14285714;
+$font-size-base: 14px;
+
+$icon-font-path: '../libraries/bootstrap/fonts/';
+
+$link-hover-decoration: none;
+
+$navbar-height: 60px;
+
+$breadcrumb-bg: $secondary-bg;
+$breadcrumb-separator: ">";
+$breadcrumb-color: $tertiary-color;
+$breadcrumb-active-color: $text-color;
+$breadcrumb-padding-vertical: 16px;
+$breadcrumb-padding-horizontal: 0;
+
+$pagination-color: $secondary-color;
+$pagination-hover-color: $primary-color;
+$pagination-hover-bg: $light-color;
+
+$pagination-active-color: $light-color;
+$pagination-active-bg: $primary-color;
+
+$dropdown-border: $border-color;
+
+
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs: 480px; //** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min: $screen-xs; //** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone: $screen-xs-min; // Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm; //** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet: $screen-sm-min; // Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md: 1056px;
+$screen-md-min: $screen-md; //** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop: $screen-md-min; // Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 1256px;
+$screen-lg-min: $screen-lg; //** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop: $screen-lg-min; // So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1); //== Grid system
+//
+//## Define your custom responsive grid.
+//** Number of columns in the grid.
+// $grid-columns: 12; //** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 16px; // Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+// $grid-float-breakpoint: $screen-md-min;
+// $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+ // Small screen / tablet
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+// Small screen / tablet
+$container-tablet: (848px + $grid-gutter-width); //** For `$screen-sm-min` and up.
+$container-sm: $container-tablet; // Medium screen / desktop
+$container-desktop: (1016px + $grid-gutter-width); //** For `$screen-md-min` and up.
+$container-md: $container-desktop; // Large screen / wide desktop
+$container-large-desktop: (1232px + $grid-gutter-width); //** For `$screen-lg-min` and up.
+$container-lg: $container-large-desktop;

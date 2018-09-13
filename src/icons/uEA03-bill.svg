@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="List-+-Cate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="List" transform="translate(-1264.000000, -102.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="icons8-new_document" transform="translate(1264.000000, 102.000000)">
+                <path d="M2.76923077,0 C1.24759569,0 0,1.24759569 0,2.76923077 L0,21.2307692 C0,22.7524043 1.24759569,24 2.76923077,24 L21.2307692,24 C22.7524043,24 24,22.7524043 24,21.2307692 L24,2.76923077 C24,1.24759569 22.7524043,0 21.2307692,0 L2.76923077,0 Z M2.90909091,2 L21.0909091,2 C21.6022727,2 22,2.39772727 22,2.90909091 L22,21.0909091 C22,21.6022727 21.6022727,22 21.0909091,22 L2.90909091,22 C2.39772727,22 2,21.6022727 2,21.0909091 L2,2.90909091 C2,2.39772727 2.39772727,2 2.90909091,2 Z M6,7 L6,9 L18,9 L18,7 L6,7 Z M6,11 L6,13 L19,13 L19,11 L6,11 Z M6,15 L6,17 L18,17 L18,15 L6,15 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

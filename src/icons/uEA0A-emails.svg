@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="45px" viewBox="0 0 47 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GICO-Copy" transform="translate(-408.000000, -5103.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="icons8-send_mass_email" transform="translate(408.000000, 5103.000000)">
+                <path d="M4.5,0 C2.027343,0 0,2.027343 0,4.5 L0,28.5 C0,30.972657 2.027343,33 4.5,33 L6,33 L6,34.5 C6,36.972657 8.027343,39 10.5,39 L24,39 L24,36 L10.5,36 C9.65625,36 9,35.34375 9,34.5 L9,11.941407 L25.5,24.375 L42,11.941407 L42,27 L45,27 L45,10.5 C45,8.027343 42.972657,6 40.5,6 L39,6 L39,4.5 C39,2.027343 36.972657,0 34.5,0 L4.5,0 Z M4.5,3 L34.5,3 C35.34375,3 36,3.65625 36,4.5 L36,6 L10.5,6 C8.027343,6 6,8.027343 6,10.5 L6,30 L4.5,30 C3.65625,30 3,29.34375 3,28.5 L3,4.5 C3,3.65625 3.65625,3 4.5,3 Z M10.5,9 L40.5,9 C40.617189,9 40.722657,9.035157 40.828125,9.070314 L25.5,20.625 L10.171875,9.070314 C10.277343,9.035157 10.382814,9 10.5,9 Z M39,30 L39,36 L27,36 L27,39 L39,39 L39,45 L46.5,37.5 L39,30 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

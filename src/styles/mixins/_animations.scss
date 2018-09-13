@@ -1,0 +1,11 @@
+@mixin default-transition {
+  transition: all 0.3s ease-in-out;
+}
+@mixin default-hover {
+  @include default-transition;
+  @media(min-width: $screen-md-min) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

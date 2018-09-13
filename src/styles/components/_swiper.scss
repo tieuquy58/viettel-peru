@@ -1,0 +1,21 @@
+.gico-button-next,
+.gico-button-prev {
+  background: transparentize($color: $dark-color, $amount: 0.5);
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  color: $light-color;
+  @include default-hover();
+}
+
+.gico-button-prev {
+  border-top-right-radius: $border-radius-base;
+  border-bottom-right-radius: $border-radius-base;
+  left: 0;
+}
+
+.gico-button-next {
+  border-top-left-radius: $border-radius-base;
+  border-bottom-left-radius: $border-radius-base;
+  right: 0;
+}

@@ -1,0 +1,341 @@
+{% extends "layouts/default.njk" %}
+{% set pageTitle = 'Icon' %}
+{% set bodyClasses = '' %}
+{% block content %}
+  <style>
+    body{
+      background-color: #f6f6f6 !important;
+      color: #333 !important;
+    }
+    
+    .glyph{
+          padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .glyph li {
+      float: left;
+    width: 10%;
+    padding: 10px 10px 5px 10px;
+    line-height: 3;
+    text-align: center;
+    border-radius: 4px;
+    background-clip: content-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    }
+
+    .glyph li:hover{
+      background: #4dadf7;
+      color: #fff !important;
+      box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,.05);
+    }
+
+    .glyph-name{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      line-height: 2;
+    }
+  </style>
+  <br/>
+  <h1 class="text-center">project-icon</h1>
+  <br/>
+  <div class="container">
+    <ul class="glyph clearfix">
+      <li title="EA01">
+        <i class="project-icon icon-home icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">home</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA01</span> #}
+        </div>
+      </li>
+      <li title="EA02">
+        <i class="project-icon icon-account icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">account</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA02</span> #}
+        </div>
+      </li>
+      <li title="EA03">
+        <i class="project-icon icon-bill icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">bill</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA03</span> #}
+        </div>
+      </li>
+      <li title="EA04">
+        <i class="project-icon icon-cart icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">cart</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA04</span> #}
+        </div>
+      </li>
+      <li title="EA05">
+        <i class="project-icon icon-check icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">check</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA05</span> #}
+        </div>
+      </li>
+      <li title="EA06">
+        <i class="project-icon icon-close icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">close</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA06</span> #}
+        </div>
+      </li>
+      <li title="EA07">
+        <i class="project-icon icon-down icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">down</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA07</span> #}
+        </div>
+      </li>
+      <li title="EA08">
+        <i class="project-icon icon-edit icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">edit</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA08</span> #}
+        </div>
+      </li>
+      <li title="EA09">
+        <i class="project-icon icon-email icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">email</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA09</span> #}
+        </div>
+      </li>
+      <li title="EA0A">
+        <i class="project-icon icon-emails icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">emails</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA0A</span> #}
+        </div>
+      </li>
+      <li title="EA0B">
+        <i class="project-icon icon-headset icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">headset</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA0B</span> #}
+        </div>
+      </li>
+      <li title="EA0C">
+        <i class="project-icon icon-heart icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">heart</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA0C</span> #}
+        </div>
+      </li>
+      <li title="EA0D">
+        <i class="project-icon icon-left-arrow icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">left-arrow</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA0D</span> #}
+        </div>
+      </li>
+      <li title="EA0E">
+        <i class="project-icon icon-like icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">like</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA0E</span> #}
+        </div>
+      </li>
+      <li title="EA0F">
+        <i class="project-icon icon-minus icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">minus</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA0F</span> #}
+        </div>
+      </li>
+      <li title="EA10">
+        <i class="project-icon icon-next icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">next</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA10</span> #}
+        </div>
+      </li>
+      <li title="EA11">
+        <i class="project-icon icon-pen icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">pen</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA11</span> #}
+        </div>
+      </li>
+      <li title="EA12">
+        <i class="project-icon icon-phone icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">phone</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA12</span> #}
+        </div>
+      </li>
+      <li title="EA13">
+        <i class="project-icon icon-plus icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">plus</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA13</span> #}
+        </div>
+      </li>
+      <li title="EA14">
+        <i class="project-icon icon-prev icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">prev</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA14</span> #}
+        </div>
+      </li>
+      <li title="EA15">
+        <i class="project-icon icon-reply icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">reply</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA15</span> #}
+        </div>
+      </li>
+      <li title="EA16">
+        <i class="project-icon icon-right-arrow icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">right-arrow</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA16</span> #}
+        </div>
+      </li>
+      <li title="EA17">
+        <i class="project-icon icon-search icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">search</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA17</span> #}
+        </div>
+      </li>
+      <li title="EA18">
+        <i class="project-icon icon-star icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">star</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA18</span> #}
+        </div>
+      </li>
+      <li title="EA19">
+        <i class="project-icon icon-trash icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">trash</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA19</span> #}
+        </div>
+      </li>
+      <li title="EA1A">
+        <i class="project-icon icon-up icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">up</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA1A</span> #}
+        </div>
+      </li>
+      <li title="EA1B">
+        <i class="project-icon icon-delete icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">delete</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA1B</span> #}
+        </div>
+      </li>
+      <li title="EA1C">
+        <i class="project-icon icon-backup icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">backup</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA1C</span> #}
+        </div>
+      </li>
+      <li title="EA1D">
+        <i class="project-icon icon-steak icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">steak</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA1D</span> #}
+        </div>
+      </li>
+      <li title="EA1E">
+        <i class="project-icon icon-pizza icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">pizza</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA1E</span> #}
+        </div>
+      </li>
+      <li title="EA1F">
+        <i class="project-icon icon-corn icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">corn</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA1F</span> #}
+        </div>
+      </li>
+      <li title="EA20">
+        <i class="project-icon icon-banana icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">banana</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA20</span> #}
+        </div>
+      </li>
+      <li title="EA21">
+        <i class="project-icon icon-filter icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">filter</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA21</span> #}
+        </div>
+      </li>
+      <li title="EA22">
+        <i class="project-icon icon-sorter icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">sorter</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA22</span> #}
+        </div>
+      </li>
+      <li title="EA23">
+        <i class="project-icon icon-right icon-2x"></i>
+        <div style="margin-top: 5px">
+          <span class="glyph-name">right</span>
+          {# <br/> #}
+          {# <span class="glyph-codepoint">EA23</span> #}
+        </div>
+      </li>
+    </ul>
+  </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="List-+-Cate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="List" transform="translate(-1385.000000, -100.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="icons8-name" transform="translate(1385.000000, 100.000000)">
+                <path d="M3,0 C1.351562,0 0,1.351562 0,3 L0,21 C0,22.648438 1.351562,24 3,24 L21,24 C22.648438,24 24,22.648438 24,21 L24,3 C24,1.351562 22.648438,0 21,0 L3,0 Z M3,2 L21,2 C21.5625,2 22,2.4375 22,3 L22,21 C22,21.5625 21.5625,22 21,22 L3,22 C2.4375,22 2,21.5625 2,21 L2,3 C2,2.4375 2.4375,2 3,2 Z M12,6 C9.804688,6 8,7.804688 8,10 C8,11.070312 8.4375,12.046876 9.125,12.765626 C7.273438,13.789062 6,15.742188 6,18 L8,18 C8,15.78125 9.78125,14 12,14 C14.21875,14 16,15.78125 16,18 L18,18 C18,15.742188 16.726562,13.789062 14.875,12.765626 C15.5625,12.046876 16,11.070312 16,10 C16,7.804688 14.195312,6 12,6 Z M12,8 C13.117188,8 14,8.882812 14,10 C14,11.117188 13.117188,12 12,12 C10.882812,12 10,11.117188 10,10 C10,8.882812 10.882812,8 12,8 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="20px" viewBox="0 0 23 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Checkout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chọn-hình-thức-thanh-toán" transform="translate(-348.000000, -569.000000)" fill="#199CE7" fill-rule="nonzero">
+            <g id="icons8-edit_property" transform="translate(348.000000, 569.000000)">
+                <path d="M2,0 C0.898438,0 0,0.898438 0,2 L0,14 C0,15.101563 0.898438,16 2,16 L14,16 L12,14 L2,14 L2,4 L18,4 L18,12 L20,14 L20,2 C20,0.898438 19.101563,0 18,0 L2,0 Z M4,6 L4,8 L6,8 L6,6 L4,6 Z M8,6 L8,8 L16,8 L16,6 L8,6 Z M4,10 L4,12 L6,12 L6,10 L4,10 Z M8,10 L8,12 L12,12 L14,10 L8,10 Z M14,12 L14,13.59375 L19.1875,18.8125 L20.8125,17.1875 L15.59375,12 L14,12 Z M21.1875,17.59375 L19.59375,19.1875 L20.3125,19.90625 C20.414063,20.007813 20.707031,20.007813 20.90625,19.90625 L21.90625,18.90625 C22.105469,18.707031 22.105469,18.511719 21.90625,18.3125 L21.1875,17.59375 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

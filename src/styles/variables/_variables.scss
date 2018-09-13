@@ -1,0 +1,20 @@
+//## Bootstrap
+//
+// Core bootstrap variables and mixins
+$img-path: "../images";
+$font-path: "../fonts";
+$icon-path: "../images/icons";
+$primary-color: #199ce7;
+$text-color: #333;
+$secondary-color: #666;
+$tertiary-color: #999;
+$border-color: #e1e1e7;
+$border-color-2: #e8eaee;
+$light-color: #fff;
+$dark-color: #000;
+$secondary-bg: #edecf2;
+$red-color: #fe5b65;
+
+$body-font: "SFProDisplay", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+@import "bootstrap-override";

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="13px" viewBox="0 0 11 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Checkout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Địa-chỉ-nhận-hàng" transform="translate(-1111.000000, -291.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="icons8-delete-copy" transform="translate(1111.000000, 291.000000)">
+                <path d="M4.496094,0 C3.675781,0 3,0.675781 3,1.496094 L3,2 L0,2 L0,3 L1,3 L1,11.5 C1,12.324219 1.675781,13 2.5,13 L8.5,13 C9.324219,13 10,12.324219 10,11.5 L10,3 L11,3 L11,2 L8,2 L8,1.496094 C8,0.675781 7.324219,0 6.503906,0 L4.496094,0 Z M4.496094,1 L6.503906,1 C6.785156,1 7,1.214844 7,1.496094 L7,3 L9,3 L9,11.5 C9,11.78125 8.78125,12 8.5,12 L2.5,12 C2.21875,12 2,11.78125 2,11.5 L2,3 L4,3 L4,1.496094 C4,1.214844 4.214844,1 4.496094,1 Z M3,4 L3,11 L4,11 L4,4 L3,4 Z M5,4 L5,11 L6,11 L6,4 L5,4 Z M7,4 L7,11 L8,11 L8,4 L7,4 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+.gico-breadcrumb {
+  background-color: $breadcrumb-bg;
+
+  .breadcrumb {
+    margin-bottom: 0;
+    @media(max-width: $screen-sm-max) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      padding: 0;
+    }
+
+    > li {
+      > a {
+        color: $breadcrumb-color;
+        @include default-hover();
+        @media(max-width: $screen-sm-max) {
+          padding: $breadcrumb-padding-vertical 0;
+          display: inline-block;
+        }
+      }
+      @media(max-width: $screen-sm-max) {
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icons8-cancel copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cart-full" transform="translate(-508.000000, -703.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="icons8-cancel-copy" transform="translate(508.000000, 703.000000)">
+                <path d="M6.5,0 C2.917969,0 0,2.917969 0,6.5 C0,10.082031 2.917969,13 6.5,13 C10.082031,13 13,10.082031 13,6.5 C13,2.917969 10.082031,0 6.5,0 Z M6.5,1 C9.542969,1 12,3.457031 12,6.5 C12,9.542969 9.542969,12 6.5,12 C3.457031,12 1,9.542969 1,6.5 C1,3.457031 3.457031,1 6.5,1 Z M4.5,3.792969 L3.792969,4.5 L4.148438,4.851563 L5.792969,6.5 L4.148438,8.148438 L3.792969,8.5 L4.5,9.207031 L4.851563,8.851563 L6.5,7.207031 L8.148438,8.851563 L8.5,9.207031 L9.207031,8.5 L8.851563,8.148438 L7.207031,6.5 L8.851563,4.851563 L9.207031,4.5 L8.5,3.792969 L8.148438,4.148438 L6.5,5.792969 L4.851563,4.148438 L4.5,3.792969 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
