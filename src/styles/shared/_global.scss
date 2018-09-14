@@ -39,7 +39,7 @@ body {
 }
 
 .wrapper{
-  width: 90%;
+  width: 95%;
   max-width: 1366px;
   display: block;
   margin: 101px auto;
@@ -48,16 +48,172 @@ body {
   border: 1px solid $border-color-2;
   box-shadow: 0 0 10px 3px $border-color-2;
   background: $light-color;
-
-  .main-content{
-    min-height: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
-
-.content:after{
+.main-content{
+  min-height: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.content:after,.page-title:after{
   clear: both;
   display: table;
   content: '';
+}
+
+.page-title{
+  display: block;
+  margin: 0 0 32px;
+
+  h1{
+    margin: 0;
+    font-size: 26.5px;
+    font-weight: 300;
+    color: $secondary-color;
+    text-align: center;
+  }
+}
+
+.progress-step{
+  display: block;
+
+  ul{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 698px;
+
+    li{
+      float: left;
+      width: 33.33333333%;
+      text-align: center;
+      position: relative;
+      
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background: $border-color;
+        top: 14px;
+        left: 0;
+        z-index: 250;
+      }
+
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background: $border-color;
+        top: 14px;
+        right: 0;
+        z-index: 200;
+      }
+
+      span{
+        display: block;
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        text-align: center;
+        font-size: 14.5px;
+        font-weight: 500;
+        border-radius: 15px;
+        border: 2px solid $border-color;
+        margin: 0 auto 19px;
+        position: relative;
+        z-index: 250;
+        background: #fff;
+        @include default-transition();
+        cursor: pointer;
+      }
+
+      label{
+        font-weight: 400;
+        font-size: 14.66px;
+        color: $tertiary-color;
+      }
+
+      &.step-1{
+        &::before{
+          display: none;
+        }
+      }
+
+      &.step-3{
+        &::after{
+          display: none;
+        }
+      }
+
+      &.active{
+        span{
+          background: $primary-color;
+          border-color: $primary-color;
+          color: $light-color;
+          width: 40px;
+          height: 40px;
+          line-height: 36px;
+          border-radius: 20px;
+          margin-top: -5px;
+        }
+
+        label{
+          font-weight: 500;
+          color: $text-color;
+        }
+
+        &.step-2{
+          &:before{
+            background: $primary-color;
+          }
+        }
+
+        &.step-3{
+          &:before{
+            background: $primary-color;
+          }
+        }
+
+        &.success{
+          span{
+            background: $light-color;
+            color: $primary-color;
+            width: 30px;
+            height: 30px;
+            line-height: 26px;
+            margin-top: 0;
+          }
+
+          label{
+            font-weight: 400;
+            color: $border-color;
+          }
+
+          &.step-1{
+            &:after{
+              background: $primary-color;
+            }
+          }
+
+          &.step-2{
+            &:after,&:before{
+              background: $primary-color;
+            }
+          }
+        }
+      }
+
+      &:hover{
+        span{
+          background: $primary-color;
+          border-color: $primary-color;
+          color: $light-color;
+        }
+      }
+    }
+  }
 }
