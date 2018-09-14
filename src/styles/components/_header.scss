@@ -1,6 +1,155 @@
-.gico-header {
-  height: 150px;
+.header-container{
   background-color: $primary-color;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-  position: relative;
+
+  &.home-page{
+    @media (min-width: $screen-lg-min) {
+      .container{
+        width: 1230px;
+      }
+    }
+    .container{
+      background: url('../images/bkg-header.png') no-repeat right bottom scroll transparent;
+      padding-top: 87px;
+      padding-bottom: 94px;
+
+      .row{
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .col-xs-12{
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+
+      h1.logo{
+        margin: 0 0 29px;
+        padding: 0;
+        img{
+          width: auto;
+        }
+      }
+      
+    }
+    
+  }
+
+  .container{
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .row{
+      margin-left: -35px;
+      margin-right: -35px;
+
+      .col{
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+
+    h1.logo{
+      margin: 0;
+      padding: 20px 0;
+      a{
+        display: inline-block;
+      }
+      img{
+        width: 86px;
+      }
+    }
+
+    h2.sub-text{
+      margin: 0 0  17px;
+      color: $yellow-color;
+      font-size: 26.67px;
+      font-weight: 300;
+    }
+
+    h3.sub-text{
+      margin: 0;
+      color: $light-color;
+      font-weight: 300;
+      font-size: 40px;
+    }
+
+    .col-logo{
+      width: 23%;
+      float: left;
+    }
+
+    .col-nav{
+      float: left;
+      width: 77%;
+
+      .nav-bar{
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+          float: left;
+
+          a{
+            display: block;
+            border-left: 2px solid #3e97a4;
+            padding: 29px 40px 29px 80px;
+            font-size: 16px;
+            color: $light-color;
+            border-bottom: 3px solid transparent;
+            @include default-transition();
+
+            &:hover,&.focus{
+              background-color: #45a7b6!important;
+              border-bottom-color: $yellow-color;
+            }
+          }
+
+          &.active{
+            > a{
+              background-color: #45a7b6!important;
+              border-bottom-color: $yellow-color;
+            }
+          }
+
+          &.nav-mi{
+            a{
+              background: url("../images/nav-bitel.png") no-repeat 18px center transparent;
+              background-size: 48px auto;
+            }
+          }
+
+          &.nav-rec{
+            a{
+              background: url("../images/nav-recargas.png") no-repeat 18px center transparent;
+              background-size: 48px auto;
+            }
+          }
+
+          &.nav-com{
+            a{
+              background: url("../images/nav-paquetes.png") no-repeat 18px center transparent;
+              background-size: 48px auto;
+            }
+          }
+
+          &.nav-ade{
+            a{
+              background: url("../images/nav-saldo.png") no-repeat 18px center transparent;
+              background-size: 48px auto;
+              border-right: 2px solid #3e97a4;
+            }
+          }
+        }
+
+        &:after{
+          content: '';
+          clear: both;
+          display: table;
+        }
+      }
+    }
+  }
 }

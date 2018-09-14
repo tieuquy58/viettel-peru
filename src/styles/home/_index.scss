@@ -1,0 +1,133 @@
+.home-sub-text{
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 37px;
+    
+    p{
+        margin: 0 0 20px;
+        font-size: 18px;
+
+        img{
+            margin-left: 7px;
+        }
+    }
+
+    &:after{
+        content: '';
+        display: block;
+        width: 35px;
+        height: 2px;
+        background: $yellow-color;
+        margin: 10px auto;
+    }
+}
+
+.home-list-action{
+    display: block;
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 30px;
+
+    .row-list{
+        margin-left: -30px;
+        margin-right: -30px;
+
+        &:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .col{
+            float: left;
+            width: 25%;
+            padding-left: 30px;
+            padding-right: 30px;
+            
+            .content{
+                @include default-hover();
+                margin: 0 0 20px;
+
+                .thumb{
+                    border: 2px solid $border-color;
+                    text-align: center;
+                    background: $light-color;
+                    border-radius: 10px;
+                    box-shadow: 0 3px 7px 3px $border-color-2;
+                    margin: 0 0 15px;
+                    overflow: hidden;
+
+                    a{
+                        display: block;
+                    }
+
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        max-width: 100%;
+                    }
+                }
+
+                h4{
+                    margin: 0;
+                    text-align: center;
+
+                    a{
+                        color: $secondary-color;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 1.4;
+
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+
+                &:hover{
+                        
+                    .thumb{
+                        border-color: $primary-color;
+                    }
+
+                    h4 {
+                        a{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-sub-link{
+    text-align: center;
+    padding: 0 0 20px;
+    .btn-link{
+        display: inline-block;
+        font-size: 17px;
+        color: $secondary-color;
+        @include default-hover();
+        border: 3px solid $primary-color;
+        padding: 20px 30px;
+        border-radius: 35px;
+
+        span.text-second-bg{
+            @include default-hover();
+        }
+
+        &:hover{
+            background: $primary-color;
+            color: $light-color;
+
+            span.text-second-bg{
+                color: $light-color;
+            }
+        }
+    }
+}

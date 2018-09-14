@@ -27,6 +27,7 @@ button {
 
 body {
   overflow-x: hidden;
+  background: $body-background;
 }
 
 .container {
@@ -35,4 +36,28 @@ body {
 
 .form-control {
   box-shadow: none;
+}
+
+.wrapper{
+  width: 90%;
+  max-width: 1366px;
+  display: block;
+  margin: 101px auto;
+  overflow: hidden;
+  border-radius: 11px;
+  border: 1px solid $border-color-2;
+  box-shadow: 0 0 10px 3px $border-color-2;
+  background: $light-color;
+
+  .main-content{
+    min-height: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.content:after{
+  clear: both;
+  display: table;
+  content: '';
 }

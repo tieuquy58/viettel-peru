@@ -1,6 +1,59 @@
 {% extends "layouts/default.njk" %}
 {% set pageTitle = 'Trang chủ' %}
-{% set bodyClasses = '' %}
+{% set bodyClasses = 'cms-index-index' %}
 {% block content %}
-  body
+  <div class="main-content">
+      <div class="container">
+          <div class="home-sub-text">
+            <p>Realiza recargas o adquiere paquetes a tu línea Bitel a través de tu tarjeta de crédito o débito <img src="assets/images/visa-name.png" alt="visa" /></p>
+          </div>
+          <div class="home-list-action">
+            <div class="row-list">
+              <div class="col col-1">
+                <div class="content">
+                  <div class="thumb">
+                    <a href="#">
+                      <img src="assets/images/action-phone.png" alt="Mi Bitel" />
+                    </a>
+                  </div>
+                  <h4><a href="#">Mi Bitel</a></h4>
+                </div>
+              </div>
+              <div class="col col-2">
+                <div class="content">
+                  <div class="thumb">
+                    <a href="#">
+                      <img src="assets/images/action-phone-dollar.png" alt="Realiza Recargas" />
+                    </a>
+                  </div>
+                  <h4><a href="#"><span>Realiza</span> Recargas</a></h4>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="content">
+                  <div class="thumb">
+                    <a href="#">
+                      <img src="assets/images/action-box.png" alt="Compra paquetes" />
+                    </a>
+                  </div>
+                  <h4><a href="#"><span>Compra</span> paquetes</a></h4>
+                </div>
+              </div>
+              <div class="col col-4">
+                <div class="content">
+                  <div class="thumb">
+                    <a href="#">
+                      <img src="assets/images/action-phone-hand.png" alt="Adelanto de saldo" />
+                    </a>
+                  </div>
+                  <h4><a href="#"><span>Adelanto</span> de saldo</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-sub-link">
+            <a class="btn-link" href="#">Si eres usuario <span class="text-medium">MIFI</span> por favor ingresa <span class="text-second-bg text-medium">AQUÍ</span></a>
+          </div>
+      </div>
+  </div>
 {% endblock %}

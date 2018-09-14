@@ -1,4 +1,48 @@
-.gico-footer {
-  height: 300px;
-  background-color: #f2f2f2;
+.footer-container{
+  min-height: 50px;
+  .container{
+    
+    .hr{
+      border-top: 2px dashed $border-color;
+    }
+
+    .content{
+      padding: 36px 0;
+    }
+
+    p{
+      margin: 0;
+    }
+
+    .copy-right{
+      text-align: left;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      p{
+        font-size: 16px;
+        color: $tertiary-color;
+      }
+    }
+
+    .footer-link{
+      text-align: right;
+      vertical-align: middle;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      float: right;
+
+      img{
+        margin-right: 19px;
+      }
+
+      a{
+        font-weight: 600;
+        @include default-hover();
+        color: $secondary-bg;
+        font-size: 16px;
+        text-decoration: underline;
+      }
+      
+    }
+  }
 }

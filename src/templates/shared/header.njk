@@ -1,3 +1,45 @@
-<header class="gico-header">
-
+<header class="header-container {% if bodyClasses == 'cms-index-index' %}home-page{% endif  %}">
+    {% if bodyClasses == 'cms-index-index' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-logo">
+                <h1 class="logo">
+                    <a href="#" title="Bitel">
+                        <img alt="Bitel" src="assets/images/logo.png" />
+                    </a>
+                </h1>
+                <h2 class="sub-text">Bienvenido(a)</h2>
+                <h3 class="sub-text">Recargas Bitel</h3>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="container">
+        <div class="row">
+            <div class="col col-logo">
+                <h1 class="logo">
+                    <a href="#" title="Bitel">
+                        <img alt="Bitel" src="assets/images/logo.png" />
+                    </a>
+                </h1>
+            </div>
+            <div class="col col-nav">
+                <ul class="nav-bar">
+                    <li class="nav-mi active">
+                        <a href="#" title="Mi Bitel">Mi Bitel</a>
+                    </li>
+                    <li class="nav-rec">
+                        <a href="#" title="Realiza Recargas">Realiza Recargas</a>
+                    </li>
+                    <li class="nav-com">
+                        <a href="#" title="Compra paquetes">Compra paquetes</a>
+                    </li>
+                    <li class="nav-ade">
+                        <a href="#" title="Adelanto de saldo">Adelanto de saldo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endif  %}
 </header>

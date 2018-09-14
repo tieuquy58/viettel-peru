@@ -22,10 +22,12 @@
   </head>
 
   <body class="{{bodyClasses}}">
-    {% include "../shared/header.njk" %}
-    {% block content %}{% endblock %}
-    {% include "../shared/footer.njk" %}
-
+    <div class="wrapper">
+        {% include "../shared/header.njk" %}
+        {% block content %}{% endblock %}
+        {% include "../shared/footer.njk" %}
+    </div>
+    
     <!-- build:js ./assets/scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>

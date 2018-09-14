@@ -39,7 +39,6 @@ window.GicoScript = (() => {
   const init = () => {
     /* Fix IE */
     utils.fixIE();
-    initEventListeners();
     initCategoryList();
   };
 
