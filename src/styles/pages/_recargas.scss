@@ -1,3 +1,186 @@
 .recargas-page{
     padding-top: 60px;
+
+    &.step-2{
+        .progress-step{
+            margin-bottom: 42px;
+        }
+
+        .step-title{
+            margin-bottom: 28px;
+        }
+
+        .step-content{
+            max-width: 662px;
+            margin: 0 auto;
+
+            .row{
+                margin-left: -10px;
+                margin-right: -10px;
+
+                .col-xs-12{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                
+            }
+        }
+    }
+}
+
+.step-wrapper{
+    .step-title{
+        display: block;
+        margin: 0 0 33px;
+
+        h2{
+            margin: 0;
+            font-weight: 300;
+            color: $primary-color;
+            font-size: 26.5px;
+            text-align: center;
+        }
+    }
+
+    .info-number{
+        display: block;
+        max-width: 483px;
+        margin: 0 auto 40px;
+        padding: 0 15px;
+        
+
+        .row{
+            text-align: center;
+            border: 2px solid $border-color-2;
+            box-shadow: 0 0 8px 1px $border-color-2;
+            border-radius: 5px;
+        }
+
+        .col-1{
+            border-right: 2px solid $border-color-2;
+            padding-top: 28px;
+            padding-bottom: 28px;
+        }
+
+        .col-2{
+            padding-top: 28px;
+            padding-bottom: 28px;
+        }
+
+        label{
+            display: block;
+            color: $primary-color;
+            font-size: 18.5px;
+            font-weight: 400;
+            margin: 0 0 8px;
+        }
+
+        span{
+            display: block;
+            color: $secondary-color;
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
+
+    .step-content{
+
+        text-align: center;
+
+        .icon-phone-number{
+            input.form-control{
+                background: url("../images/bkg-input-number.png") no-repeat 32px center scroll $light-color;
+                background-size: 20px 33px;
+                max-width: 294px;
+                padding-left: 73px;
+                padding-right: 15px;
+            }
+
+            &.form-group{
+                max-width: 294px;
+                margin: 0 auto 56px;
+            }
+        }
+
+        .icon-monto{
+
+            &.form-group{
+                max-width: 241px;
+                margin: 0 auto 15px;
+            }
+
+            input.form-control{
+                background: url("../images/bkg-input-monto.png") no-repeat 20px center scroll $light-color;
+                background-size: 29px;
+                padding-left: 62px;
+                padding-right: 15px;
+            }
+        }
+
+        .group-number{
+            display: inline-block;
+            margin-bottom: 18px;
+            margin-right: 34px;
+
+            .styled-radio{
+                padding: 0;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        .form-group{
+            .notice{
+                margin: 0 0 10px;
+                color: $orange-color;
+                font-size: 16px;
+            }
+
+            .btn-yellow{
+                display: block;
+                margin: 0 auto;
+                max-width: 268px;
+            }
+
+            &.form-btn{
+                margin-bottom: 54px;
+            }
+
+            &.icon-nombres{
+                input.form-control{
+                    background: url("../images/bkg-input-nombres.png") no-repeat 28px center scroll $light-color;
+                    background-size: 18px;
+                }
+            }
+
+            &.icon-tipo{
+                input.form-control{
+                    background: url("../images/bkg-input-tipo.png") no-repeat 22px center scroll $light-color;
+                    background-size: 28px;
+                }
+            }
+
+            &.icon-correo{
+                input.form-control{
+                    background: url("../images/bkg-input-correo.png") no-repeat 22px center scroll $light-color;
+                    background-size: 28px;
+                }
+            }
+        }
+
+        .group-box-radio{
+            border: 1px solid $border-color;
+            max-width: 348px;
+            margin: 0 auto 15px;
+            padding: 13px;
+            border-radius: 29px;
+
+            label{
+                display: block;
+            }
+        }
+
+    }
 }

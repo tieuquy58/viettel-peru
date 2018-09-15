@@ -36,10 +36,22 @@ window.GicoScript = (() => {
     }
   };
 
+  const initSelectOne = () => {
+    $(".gender").click(function(){
+      var gender = $(this).data("gender");
+      $('.gender').removeClass('btn-gender');
+      $('.gender').addClass('btn-gender-unselected');
+      $(this).removeClass('btn-gender-unselected');
+      $(this).addClass('btn-gender');
+      return false;
+    });
+  }
+
   const init = () => {
     /* Fix IE */
     utils.fixIE();
     initCategoryList();
+    initSelectOne();
   };
 
   return {init};

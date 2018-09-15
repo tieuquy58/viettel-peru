@@ -8,11 +8,30 @@
   -o-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+
+  .styled-checkbox-cricle{
+    display: block;
+    width: 64px;
+    height: 64px;
+    line-height: 62px;
+    border: 1px solid $border-color;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 32px;
+  }
 }
 
-.styled-checkbox:hover {
-  opacity: 0.8;
+.styled-checkbox-input:checked~.styled-checkbox-cricle {
+  border-color: $primary-color;
 }
+
+.styled-checkbox-input:checked~.styled-checkbox-cricle {
+  background-color: $primary-color;
+}
+
+// .styled-checkbox:hover {
+//   opacity: 0.8;
+// }
 
 .styled-checkbox-input {
   display: none;

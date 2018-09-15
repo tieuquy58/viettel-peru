@@ -9,19 +9,68 @@
             </div>
             <div class="progress-step">
                 <ul>
-                    <li class="step-1 active success">
+                    <li class="step-1 active">
                         <span>1</span>
                         <label>Monto de recarga</label>
                     </li>
-                    <li class="step-2 active success">
+                    <li class="step-2">
                         <span>2</span>
-                        <label>Monto de recarga</label>
+                        <label>Infomación de pago</label>
                     </li>
-                    <li class="step-3 active">
+                    <li class="step-3">
                         <span>3</span>
-                        <label>Monto de recarga</label>
+                        <label>Recarga satisfactoria</label>
                     </li>
                 </ul>
+            </div>
+            <div class="step-wrapper">
+                <div class="step-title">
+                    <h2>Ingresa el monto de tu recarga</h2>
+                </div>
+                <div class="step-content">
+                    <div class="form-group icon-phone-number">
+                        <input type="number" class="form-control" name="mobi" placeholder="Ingresa un número Bitel" />
+                    </div>
+                    <div class="form-group">
+                        {% for i in range(0, 2) %}
+                        <div class="group-number">
+                            <label class="styled-radio">
+                                <input type="radio" class="styled-radio-input" name="numberCheck" value="{{i}}">
+                                <span class="styled-radio-cricle">
+                                    S/3
+                                </span>
+                            </label>
+                        </div>
+                        <div class="group-number">
+                            <label class="styled-radio">
+                                <input type="radio" class="styled-radio-input" name="numberCheck" value="{{i+1}}">
+                                <span class="styled-radio-cricle">
+                                    S/5
+                                </span>
+                            </label>
+                        </div>
+                        <div class="group-number">
+                                <label class="styled-radio">
+                                    <input type="radio" class="styled-radio-input" name="numberCheck" value="{{i+2}}">
+                                    <span class="styled-radio-cricle">
+                                        S/10
+                                    </span>
+                                </label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group icon-monto">
+                        <input type="number" class="form-control" name="mobi" placeholder="Ingresa otro monto" />
+                    </div>
+                    <div class="form-group">
+                        <p class="notice">
+                            Monto mín : S/3 y monto máx: S/100
+                        </p>
+                    </div>
+                    <div class="form-group form-btn">
+                        <a href="./realiza-recargas-step-2.html" title="CONTINUAR" class="btn btn-default btn-yellow">CONTINUAR</a>
+                    </div>
+                </div>
             </div>
       </div>
   </div>

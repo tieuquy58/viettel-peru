@@ -1,0 +1,109 @@
+.styled-radio{
+	padding-left: 40px;
+	position: relative;
+	line-height: 30px;
+	font-weight: 400;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 17.5px;
+  color: $secondary-color;
+
+  .styled-radio-cricle{
+    display: block;
+    width: 64px;
+    height: 64px;
+    line-height: 62px;
+    border: 1px solid $border-color;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 32px;
+  }
+
+  &:hover{
+    .styled-radio-cricle{
+      background: $primary-color;
+      color: $light-color;
+      border-color: $primary-color;
+    }
+  }
+
+  a{
+    color: $dark-color;
+    @include default-hover();
+  }
+}
+
+.styled-radio-input {
+  display: none;
+}
+
+.styled-radio-input:checked~.styled-radio-cricle {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $light-color;
+}
+
+.styled-radio-input:checked~.styled-radio-box {
+  background-color: $light-color;
+  
+  &::after{
+    background: $primary-color;
+  }
+}
+
+.styled-radio-input:checked~.styled-radio-box::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.styled-radio-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: solid 1px $border-color;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.styled-radio-box::after {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 9;
+  background-color: $border-color;
+  transition: all 0.2s ease-in-out;
+  content: "";
+  border-radius: 100%;
+}
+
+.styled-radio.type2{
+
+  .styled-radio-box{
+    width: 24px;
+    height: 24px;
+  }
+
+  .styled-radio-input:checked ~ .styled-radio-box{
+    background-color: #fff;
+    border-width: 7px;
+  }
+
+  .styled-radio-input:checked ~ .styled-radio-box::after{
+    display: none;
+  }
+
+}

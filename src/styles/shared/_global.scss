@@ -75,13 +75,15 @@ body {
 
 .progress-step{
   display: block;
+  margin: 0 0 70px;
 
   ul{
-    display: block;
+    display: table;
     margin: 0 auto;
     padding: 0;
     list-style: none;
     max-width: 698px;
+    width: 100%;
 
     li{
       float: left;
@@ -215,5 +217,41 @@ body {
         }
       }
     }
+  }
+}
+
+.form-group{
+  &.icon-input{
+    input.form-control{
+      padding-left: 66px;
+      padding-right: 15px;
+    }
+  }
+
+  input.form-control{
+    height: 55px;
+    color: $secondary-color;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+
+}
+
+.btn-yellow{
+  font-size: 17.5px;
+  font-weight: 700;
+  border-radius: 6px;
+  border-color: $yellow-color;
+  background: $yellow-color;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 0 0px #d7c53b;
+  color: $secondary-color;
+  @include default-transition();
+
+  &:hover,&:focus,&:active{
+    border-color: $primary-color;
+    background: $primary-color;
+    color: $light-color;
+    box-shadow: 0px 4px 0 0px #3e97a4;
   }
 }
