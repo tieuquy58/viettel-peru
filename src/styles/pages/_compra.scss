@@ -1,0 +1,248 @@
+.compra-page{
+    .progress-step{
+        margin: 0 0 40px;
+    }
+    .step-wrapper{
+        margin: 0 0 40px;
+
+        .form-group.icon-phone-number{
+            width: 90%;
+            max-width: 780px;
+            border: 1px solid $border-color-2;
+            box-shadow: 0 0 5px 1px $border-color-2;
+            background: #f9f9f9;
+            padding: 37px 20px;
+            text-align: center;
+            border-radius: 10px;
+
+            input.form-control{
+                display: inline-block;
+                border: 2px solid $primary-color;
+                margin: 0 0 25px;
+                vertical-align: top;
+            }
+
+            button.btn{
+                display: inline-block;
+                padding: 12px 20px;
+                margin: 0 0 25px 18px;
+                vertical-align: top;
+            }
+        }
+
+        .noti{
+            margin: 0;
+            color: $secondary-color;
+            text-align: center;
+            display: block;
+            clear: both;
+
+            span{
+                text-transform: uppercase;
+                color: $primary-color;
+                font-weight: 500;
+            }
+        }
+
+        .step-note{
+            display: block;
+            padding: 20px 15px;
+            max-width: 1116px;
+            margin: 0 auto;
+            border: 2px solid $primary-color;
+            border-radius: 10px;
+
+            .col-text{
+                font-size: 17px;
+                text-align: left;
+                color: $secondary-color;
+
+                .col-img{
+                    height: 44px;
+                    line-height: 44px;
+                    float: left;
+                    margin: 0 25px 0 -25px;
+                }
+
+            }
+
+            .col-btn{
+                .btn{
+                    padding: 11px 20px;
+                    max-width: 148px;
+                }
+            }
+
+            @media screen and (min-width: $screen-sm-max){
+                .col-text{
+                    width: 41%;
+                    padding-left: 47px;
+                    padding-right: 47px;
+
+                    &.col-1{
+                        border-right: 2px solid $border-color;
+                    }
+
+                    &.col-2{
+                        padding-right: 15px;
+                    }
+                }
+                .col-btn{
+                    width: 18%;
+                }
+            }
+        }
+    }
+
+    .mostrar-wrapper{
+        .page-title{
+            h1{
+                color: $primary-color;
+            }
+        }
+
+        .page-sub-title{
+            text-align: center;
+            margin: 0 0 25px;
+
+            h4{
+                margin: 0;
+                font-size: 20px;
+                color: $secondary-color;
+                font-weight: 500;
+                display: inline-block;
+                line-height: 30px;
+
+                span{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background: url('../images/bkg-star.png') no-repeat center scroll transparent;
+                    vertical-align: middle;
+                    margin-top: -7px;
+                    margin-right: 13px;
+                }
+
+                &:after{
+                    display: block;
+                    content: '';
+                    width: 54px;
+                    height: 2px;
+                    background: $primary-color;
+                    margin: 15px auto;
+                }
+            }
+        }
+        
+        .comprados-list{
+            border: 2px solid #f3efd8;
+            background: #fffdf1;
+            padding: 35px 0 0;
+            margin-bottom: 25px;
+
+            .list-item{
+                display: block;
+                max-width: 1168px;
+                margin: 0 auto;
+                padding: 0 26px;
+
+                .row{
+                    margin-bottom: 0;
+                    padding: 0;
+                    list-style: none;
+                    margin-left: -26px;
+                    margin-right: -26px;
+
+                    li{
+                        margin-bottom: 35px;
+                        padding-left: 26px;
+                        padding-right: 26px;
+
+                        .content{
+                            border: 1px solid $border-color;
+                            box-shadow: 0 0 8px 2px $border-color-2;
+                            border-radius: 10px;
+                            background: $light-color;
+                            padding: 28px 40px;
+                            text-align: center;
+
+                            p{
+                                margin: 0 0 4px;
+                                font-size: 16px;
+
+                                &.title{
+                                    color: $orange-color;
+                                    font-weight: 500;
+                                    font-size: 21px;
+                                }
+
+                                &.sub{
+                                    font-size: 17px;
+                                }
+
+                                &.price{
+                                    font-size: 17px;
+                                    margin: 0 0 9px;
+                                }
+
+                            }
+
+                            .btn{
+                                padding: 11px 20px;
+                                display: block;
+                                border-color: $primary-color;
+                                border-width: 2px;
+                                color: $primary-color;
+                                @include default-transition();
+
+                                &:hover,&:active,&:focus{
+                                    background: $primary-color;
+                                    color: $light-color;
+                                }
+
+                            }
+                        }
+
+                        &.active{
+                            .content{
+                                background: $primary-color;
+                                border-color: $primary-color;
+                                p{
+                                    color: $light-color;
+
+                                    &.title{
+                                        color: $yellow-color;
+                                        font-weight: 500;
+                                    }
+
+                                    &.price{
+                                        span{
+                                            color: $yellow-color;
+                                        }
+                                    }
+                                }
+
+                                .btn{
+                                    &:hover,&:active,&:focus{
+                                        background: $yellow-color;
+                                        color: $primary-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .paquetes-list{
+            .page-sub-title{
+                h4{
+                    span{
+                        background: url("../images/bkg-paquetes.png") no-repeat center scroll transparent;
+                    }
+                }
+            }
+        }
+    }
+}

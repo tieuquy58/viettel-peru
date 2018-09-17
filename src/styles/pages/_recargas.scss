@@ -68,6 +68,21 @@
             }
         }
     }
+
+    &.step-3{
+        .progress-step{
+            margin: 0 0 31px;
+        }
+        .step-title{
+            img{
+                margin: 0 auto 31px;
+                display: block;
+            }
+            h2{
+                color: $secondary-color;
+            }
+        }
+    }
 }
 
 .step-wrapper{
@@ -225,6 +240,74 @@
 
             label{
                 display: block;
+            }
+        }
+
+    }
+
+    .review-info{
+        display: block;
+        width: 90%;
+        max-width: 650px;
+        border: 2px solid $border-color-2;
+        box-shadow: 0 0 6px 2px $border-color-2;
+        border-radius: 4px;
+        margin: 0 auto;
+
+        .info{
+            padding: 70px 85px 31px 85px;
+            border-bottom: 2px dashed $border-color-2;
+
+            ul{
+                padding: 0;
+                list-style: none;
+                margin-bottom: 0;
+
+                li{
+                    text-align: left;
+                    margin-bottom: 39px;
+                    
+                    label{
+                        font-weight: 400;
+                        color: $primary-color;
+                        display: block;
+                        font-size: 17.5px;
+                    }
+                    span{
+                        display: block;
+                        color: $secondary-color;
+                        font-size: 24px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        .notice{
+            padding: 35px 30px;
+            border-bottom: 2px dashed $border-color-2;
+            p{
+                margin: 0 0 14px;
+                font-size: 17px;
+                color: $orange-color;
+            }
+
+            a{
+                font-size: 21.5px;
+                color: $secondary-color;
+                @include default-hover();
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .group-btns{
+            padding: 28px 30px;
+
+            .btn{
+                min-width: 267px;
             }
         }
 

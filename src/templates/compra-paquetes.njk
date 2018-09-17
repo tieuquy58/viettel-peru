@@ -2,9 +2,113 @@
 {% set pageTitle = 'Compra Paquetes' %}
 {% set bodyClasses = 'compra-index-index' %}
 {% block content %}
-  <div class="main-content compra-page">
-      <div class="container">
-          demo content
+<div class="main-content compra-page">
+  <div class="container">
+    <div class="page-title">
+      <h1>Compra Paquetes</h1>
+    </div>
+    <div class="progress-step">
+      <ul>
+        <li class="step-1 active">
+          <span>1</span>
+          <label>Elige tu paquete</label>
+        </li>
+        <li class="step-2">
+          <span>2</span>
+          <label>Comfirma tu compra</label>
+        </li>
+        <li class="step-3">
+          <span>3</span>
+          <label>Compra exitosa</label>
+        </li>
+      </ul>
+    </div>
+    <div class="step-wrapper">
+      <div class="step-title">
+        <h2>Ingresa tu nemero Bitel</h2>
+      </div>
+      <div class="step-content">
+        <div class="form-group icon-phone-number">
+          <input type="number" maxlength="9" class="form-control" name="mobi" placeholder="Ingresa un número Bitel" />
+          <button type="button" title="MOSTRAR PAQUETES" class="btn btn-default btn-primary">MOSTRAR PAQUETES</button>
+          <p class="noti">Al hacer click en el boton "<span>MOSTRAR PAQUETES</span>" aoareceran todos los paquetes</p>
+        </div>
+        <div class="step-note">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-text col-1">
+              <span class="col-img"><img alt="visa card" src="assets/images/visa-name.png" /></span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+            <div class="col-xs-6 col-sm-6 col-text col-2">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="text-primary text-medium">industry's
+              </span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-btn">
+              <a href="./index.html" class="btn btn-yellow btn-full" title="IR A MI BITEL">IR A MI BITEL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mostrar-wrapper">
+    <div class="page-title">
+      <h1>Elige el paquete que deseas comprar</h1>
+    </div>
+    <div class="comprados-list">
+        <div class="page-sub-title">
+            <h4><span class="icon"></span>Paquetes mas comprados</h4>
+        </div>
+        <div class="list-item">
+            <ul class="row">
+                <li class="item col-xs-6 col-sm-6 col-md-3 active">
+                    <div class="content">
+                        <p class="title">Mimax 3</p>
+                        <p class="sub">Vigencia de 3 dias</p>
+                        <p class="price">Precio: <span>S/3.00</span></p>
+                        <a class="btn btn-default" href="#">COMPRAR</a>
+                    </div>
+                </li>
+                {% for i in range(0, 3) %}
+                <li class="item col-xs-6 col-sm-6 col-md-3">
+                    <div class="content">
+                        <p class="title">Mimax 3</p>
+                        <p class="sub">Vigencia de 3 dias</p>
+                        <p class="price">Precio: <span>S/3.00</span></p>
+                        <a class="btn btn-default" href="#">COMPRAR</a>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="paquetes-list">
+      <div class="page-sub-title">
+          <h4><span class="icon"></span>Todos nuestros paquetes</h4>
+      </div>
+      <div class="list-item">
+          <ul class="row">
+              <li class="item col-xs-6 col-sm-6 col-md-3 active">
+                  <div class="content">
+                      <p class="title">Mimax 3</p>
+                      <p class="sub">Vigencia de 3 dias</p>
+                      <p class="price">Precio: <span>S/3.00</span></p>
+                      <a class="btn btn-default" href="#">COMPRAR</a>
+                  </div>
+              </li>
+              {% for i in range(0, 3) %}
+              <li class="item col-xs-6 col-sm-6 col-md-3">
+                  <div class="content">
+                      <p class="title">Mimax 3</p>
+                      <p class="sub">Vigencia de 3 dias</p>
+                      <p class="price">Precio: <span>S/3.00</span></p>
+                      <a class="btn btn-default" href="#">COMPRAR</a>
+                  </div>
+              </li>
+              {% endfor %}
+          </ul>
       </div>
   </div>
+  </div>
+</div>
 {% endblock %}

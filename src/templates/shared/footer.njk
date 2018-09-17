@@ -3,12 +3,18 @@
         <div class="hr"></div>
         <div class="row">
             <div class="content">
-                <div class="footer-link col-xs-12 col-sm-6">
-                    <p> <img alt="book" src="assets/images/footer-book.png" /><a href="https://www.bitel.com.pe/complain/introduction" target="_blank" title="Libro de reclamaciones">Libro de reclamaciones</a></p>
-                </div>
-                <div class="copy-right col-xs-12 col-sm-6">
-                    <p>Copyright by Vietel Perú S.A.C 2018</p>
-                </div>
+                {% if bodyClasses == 'compra-index-index' %}
+                    <div class="copy-right col-xs-12 text-center">
+                        <p>Copyright by Vietel Perú S.A.C 2018</p>
+                    </div>
+                {% else  %}
+                    <div class="footer-link col-xs-12 col-sm-6">
+                        <p> <img alt="book" src="assets/images/footer-book.png" /><a href="https://www.bitel.com.pe/complain/introduction" target="_blank" title="Libro de reclamaciones">Libro de reclamaciones</a></p>
+                    </div>
+                    <div class="copy-right col-xs-12 col-sm-6">
+                        <p>Copyright by Vietel Perú S.A.C 2018</p>
+                    </div>
+                {% endif  %}
             </div>
         </div>
     </div>

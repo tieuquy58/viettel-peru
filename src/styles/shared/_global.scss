@@ -137,6 +137,7 @@ body {
         font-weight: 400;
         font-size: 14.66px;
         color: $tertiary-color;
+        margin: 0;
       }
 
       &.step-1{
@@ -161,6 +162,7 @@ body {
           line-height: 36px;
           border-radius: 20px;
           margin-top: -5px;
+          margin-bottom: 14px;
         }
 
         label{
@@ -231,7 +233,7 @@ body {
   input.form-control,select.form-control{
     height: 55px;
     color: $secondary-color;
-    font-size: 16px;
+    font-size: 17.5px;
     border-radius: 30px;
   }
 
@@ -250,6 +252,12 @@ body {
     color: $light-color;
     box-shadow: 0px 4px 0 0px #3e97a4;
   }
+}
+
+.btn-primary{
+  box-shadow: 0px 4px 0 0px #129ea2;
+  color: $light-color;
+  @include default-hover();
 }
 
 .modal-header{
@@ -271,8 +279,8 @@ body {
   .modal-dialog{
     margin: 120px auto 30px;
   }
- 
 }
+
 
 ::placeholder {
   color: $tertiary-color;
@@ -295,4 +303,23 @@ body {
 }
 .mgt-20{
   margin-top: 20px!important;
+}
+
+ul.reset{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.btn-full{
+  max-width: none;
+  width: 100%;
+}
+@media screen and (max-width: $screen-sm-min){
+  .btn-xs-full{
+    width: 100%;
+    display: block;
+    margin: 0 0 10px;
+  }
 }
