@@ -11,7 +11,7 @@
         }
 
         .step-content{
-            max-width: 662px;
+            max-width: 770px;
             margin: 0 auto;
 
             .row{
@@ -23,6 +23,48 @@
                     padding-right: 10px;
                 }
                 
+            }
+
+            .form-group{
+                margin: 0 0 25px;
+            }
+
+            .group-btn{
+                .btn{
+                    display: inline-block;
+                }
+
+                .btn-volver{
+                    min-width: 188px;
+                }
+
+                .btn-paga{
+                    border: 0;
+                    background: #00579f;
+                    color: $light-color;
+                    position: relative;
+                    overflow: hidden;
+                    padding: 15px 85px 15px 17px;
+                    margin-left: 26px;
+                    @include default-hover();
+                    
+                    span.icon{
+                        background: url("../images/visa-name-white.png") no-repeat center center scroll #004075;
+                        background-size: 42px 14px;
+                        display: inline-block;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 68px;
+                        right: 0;
+                    }
+                }
+
+                .btn-paga[disabled]{
+                    &:hover,&:focus,&:active{
+                        opacity: 0.65;
+                    }
+                }
             }
         }
     }
@@ -156,6 +198,10 @@
             }
 
             &.icon-tipo{
+                select.form-control{
+                    background: url("../images/bkg-input-tipo.png") no-repeat 22px center scroll $light-color;
+                    background-size: 28px;
+                }
                 input.form-control{
                     background: url("../images/bkg-input-tipo.png") no-repeat 22px center scroll $light-color;
                     background-size: 28px;
@@ -182,5 +228,30 @@
             }
         }
 
+    }
+}
+
+#open-paga-visa{
+    .modal-dialog{
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .modal-header{
+        padding: 50px 15px 15px;   
+    }
+
+    .modal-body{
+        padding: 15px 35px;
+        text-align: center;
+        color: $secondary-color;
+    }
+
+    .modal-footer{
+        padding: 15px 15px 50px;
+
+        .btn-yellow{
+            min-width: 220px;
+        }
     }
 }

@@ -25,16 +25,16 @@
             </div>
             <div class="col col-nav">
                 <ul class="nav-bar">
-                    <li class="nav-mi active">
+                    <li class="nav-mi {% if bodyClasses == 'cms-index-index' %}active{% endif  %}">
                         <a href="../index.njk" title="Mi Bitel">Mi Bitel</a>
                     </li>
-                    <li class="nav-rec">
-                        <a href="../realiza-recargas.njk" title="Realiza Recargas">Realiza Recargas</a>
+                    <li class="nav-rec {% if bodyClasses == 'recargas-index-index' %}active{% endif  %}">
+                        <a href="../realiza-recargas.html" title="Realiza Recargas">Realiza Recargas</a>
                     </li>
-                    <li class="nav-com">
+                    <li class="nav-com {% if bodyClasses == 'compra-index-index' %}active{% endif  %}">
                         <a href="../compra-paquetes.html" title="Compra paquetes">Compra paquetes</a>
                     </li>
-                    <li class="nav-ade">
+                    <li class="nav-ade {% if bodyClasses == 'adelanto-index-index' %}active{% endif  %}">
                         <a href="../adelanto-de-saldo.html" title="Adelanto de saldo">Adelanto de saldo</a>
                     </li>
                 </ul>

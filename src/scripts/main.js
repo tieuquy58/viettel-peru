@@ -47,11 +47,23 @@ window.GicoScript = (() => {
     });
   }
 
+  const initCheckPagaPopup = () =>{
+    $('#check-paga-visa').change(function(){
+      if(this.checked){
+        $('.btn-paga').removeAttr('disabled');
+      }else{
+        $('.btn-paga').prop('disabled');
+      }
+
+    });
+  }
+    
   const init = () => {
     /* Fix IE */
     utils.fixIE();
     initCategoryList();
     initSelectOne();
+    initCheckPagaPopup();
   };
 
   return {init};

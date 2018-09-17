@@ -2,85 +2,107 @@
 {% set pageTitle = 'Recargas' %}
 {% set bodyClasses = 'recargas-index-index' %}
 {% block content %}
-  <div class="main-content recargas-page step-2">
-      <div class="container">
-            <div class="page-title">
-                <h1>Recargas</h1>
-            </div>
-            <div class="progress-step">
-                <ul>
-                    <li class="step-1 active success">
-                        <span>1</span>
-                        <label>Monto de recarga</label>
-                    </li>
-                    <li class="step-2 active">
-                        <span>2</span>
-                        <label>Infomación de pago</label>
-                    </li>
-                    <li class="step-3">
-                        <span>3</span>
-                        <label>Recarga satisfactoria</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="step-wrapper">
-                <div class="info-number">
-                    <div class="row">
-                        <div class="col-1 col-xs-12 col-sm-6">
-                            <label>Número a recarga</label>
-                            <span>961 930 499</span>
-                        </div>
-                        <div class="col-2 col-xs-12 col-sm-6">
-                            <label>Monto a recarga</label>
-                            <span>S/5.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-title">
-                    <h2>Ingresa la infomación para tu recarga</h2>
-                </div>
-                <div class="step-content">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group icon-input icon-nombres">
-                                <input type="text" class="form-control" name="nombres" placeholder="Nombres" />
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group icon-input icon-tipo">
-                                <input type="text" class="form-control" name="tipo" placeholder="Tipo de documento" />
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group icon-input icon-tipo">
-                                <input type="text" class="form-control" name="numero" placeholder="Número de documento" />
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group icon-input icon-correo">
-                                <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="group-box-radio">
-                            <label class="styled-radio">
-                                <input type="radio" class="styled-radio-input" name="numberCheck" value="">
-                                <span class="styled-radio-box"></span>
-                                Acepto los <a target="_blank" href="#" title="redirect to términos y condiciones">términos y condiciones</a>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <p class="notice">
-                            Monto mín : S/3 y monto máx: S/100
-                        </p>
-                    </div>
-                    <div class="form-group form-btn">
-                        <a href="#" title="CONTINUAR" class="btn btn-default btn-yellow">CONTINUAR</a>
-                    </div>
-                </div>
-            </div>
+<div class="main-content recargas-page step-2">
+  <div class="container">
+    <div class="page-title">
+      <h1>Recargas</h1>
+    </div>
+    <div class="progress-step">
+      <ul>
+        <li class="step-1 active success">
+          <span>1</span>
+          <label>Monto de recarga</label>
+        </li>
+        <li class="step-2 active">
+          <span>2</span>
+          <label>Infomación de pago</label>
+        </li>
+        <li class="step-3">
+          <span>3</span>
+          <label>Recarga satisfactoria</label>
+        </li>
+      </ul>
+    </div>
+    <div class="step-wrapper">
+      <div class="info-number">
+        <div class="row">
+          <div class="col-1 col-xs-12 col-sm-6">
+            <label>Número a recarga</label>
+            <span>961 930 499</span>
+          </div>
+          <div class="col-2 col-xs-12 col-sm-6">
+            <label>Monto a recarga</label>
+            <span>S/5.00</span>
+          </div>
+        </div>
       </div>
+      <div class="step-title">
+        <h2>Ingresa la infomación para tu recarga</h2>
+      </div>
+      <div class="step-content">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group icon-input icon-nombres">
+              <input type="text" class="form-control" name="nombres" placeholder="Nombres" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group icon-input icon-tipo">
+              <select name="tipo" class="form-control">
+                <option value="">Tipo de documento</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group icon-input icon-tipo">
+              <input type="text" class="form-control" name="numero" placeholder="Número de documento" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group icon-input icon-correo">
+              <input type="text" class="form-control" name="correo" placeholder="Correo electrónico" />
+              <p class="notice mgt-15">
+                La constancia de recarga se enviara a este correo
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="group-box-radio">
+            <label class="styled-radio">
+              <input type="radio" id="check-paga-visa" class="styled-radio-input" name="numberCheck" value="">
+              <span class="styled-radio-box"></span>
+              Acepto los <a target="_blank" href="#" title="redirect to términos y condiciones">términos y condiciones</a>
+            </label>
+          </div>
+        </div>
+        <div class="form-group group-btn">
+          <a href="./realiza-recargas.html" title="VOLVER" class="btn btn-default btn-volver">VOLVER</a>
+          <button type="button" data-toggle="modal" data-target="#open-paga-visa" title="PAGA CON VISA" disabled="disabled" class="btn btn-default btn-paga">PAGA
+                CON <span class="icon"></span></button>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+<div class="modal fade" id="open-paga-visa" tabindex="-1" role="dialog" aria-labelledby="open-paga-visa-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Paga con Visa</h4>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s
+      </div>
+      <div class="modal-footer">
+        <a href="#" title="Redirect to REALIZAR PAGO" class="btn btn-yellow">REALIZAR PAGO</a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -222,13 +222,13 @@ body {
 
 .form-group{
   &.icon-input{
-    input.form-control{
+    input.form-control,select.form-control{
       padding-left: 66px;
       padding-right: 15px;
     }
   }
 
-  input.form-control{
+  input.form-control,select.form-control{
     height: 55px;
     color: $secondary-color;
     font-size: 16px;
@@ -238,12 +238,8 @@ body {
 }
 
 .btn-yellow{
-  font-size: 17.5px;
-  font-weight: 700;
-  border-radius: 6px;
   border-color: $yellow-color;
   background: $yellow-color;
-  padding: 10px 20px;
   box-shadow: 0px 4px 0 0px #d7c53b;
   color: $secondary-color;
   @include default-transition();
@@ -254,4 +250,49 @@ body {
     color: $light-color;
     box-shadow: 0px 4px 0 0px #3e97a4;
   }
+}
+
+.modal-header{
+  border-bottom: 0 none;
+  .modal-title{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: $primary-color;
+  }
+}
+
+.modal-footer{
+  border-top: 0 none;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .modal-dialog{
+    margin: 120px auto 30px;
+  }
+ 
+}
+
+::placeholder {
+  color: $tertiary-color;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $tertiary-color;
+}
+
+::-ms-input-placeholder { 
+  color: $tertiary-color;
+}
+
+.mgt-10{
+  margin-top: 10px!important;
+}
+.mgt-15{
+  margin-top: 15px!important;
+}
+.mgt-20{
+  margin-top: 20px!important;
 }
