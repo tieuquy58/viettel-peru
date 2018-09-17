@@ -87,26 +87,58 @@
           <h4><span class="icon"></span>Todos nuestros paquetes</h4>
       </div>
       <div class="list-item">
-          <ul class="row">
-              <li class="item col-xs-6 col-sm-6 col-md-3 active">
-                  <div class="content">
-                      <p class="title">Mimax 3</p>
-                      <p class="sub">Vigencia de 3 dias</p>
-                      <p class="price">Precio: <span>S/3.00</span></p>
-                      <a class="btn btn-default" href="#">COMPRAR</a>
-                  </div>
-              </li>
-              {% for i in range(0, 3) %}
-              <li class="item col-xs-6 col-sm-6 col-md-3">
-                  <div class="content">
-                      <p class="title">Mimax 3</p>
-                      <p class="sub">Vigencia de 3 dias</p>
-                      <p class="price">Precio: <span>S/3.00</span></p>
-                      <a class="btn btn-default" href="#">COMPRAR</a>
-                  </div>
-              </li>
-              {% endfor %}
+          <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#todo-ilimitado" aria-controls="todo-ilimitado" role="tab" data-toggle="tab">Todo Ilimitado</a></li>
+              <li role="presentation"><a href="#paquetes-internet" aria-controls="paquetes-internet" role="tab" data-toggle="tab">Internet</a></li>
+              <li role="presentation"><a href="#paquetes-minutos" aria-controls="paquetes-minutos" role="tab" data-toggle="tab">Minutos</a></li>
+              <li role="presentation"><a href="#paquetes-entretenimiento" aria-controls="paquetes-entretenimiento" role="tab" data-toggle="tab">Entretenimiento</a></li>
+              <li role="presentation"><a href="#paquetes-mixtos" aria-controls="paquetes-mixtos" role="tab" data-toggle="tab">Mixtos y otros</a></li>
           </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="todo-ilimitado">
+              <table class="table"> 
+                <thead>
+                  <tr>
+                    <th>
+                        Nombre de paquete
+                    </th>
+                    <th>
+                        Descripcion
+                    </th>
+                    <th>
+                        Vigencia
+                    </th>
+                    <th>
+                        Precio
+                    </th>
+                    <th>
+                        Seleccionar
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+1111
+                    </td>
+                    <td>
+                      222
+                    </td>
+                    <td>
+                      333
+                    </td>
+                    <td colspan="2">
+                  444
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="paquetes-internet">...</div>
+            <div role="tabpanel" class="tab-pane" id="paquetes-minutos">...</div>
+            <div role="tabpanel" class="tab-pane" id="paquetes-entretenimiento">...</div>
+            <div role="tabpanel" class="tab-pane" id="paquetes-mixtos">...</div>
+          </div>
       </div>
   </div>
   </div>

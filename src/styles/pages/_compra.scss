@@ -243,6 +243,92 @@
                     }
                 }
             }
+
+            .list-item{
+                padding: 0 15px;
+
+                .nav-tabs{
+                    border: 2px solid $primary-color;
+                    border-radius: 10px;
+                    padding: 12px;
+                    max-width: 1116px;
+                    margin: 0 auto 23px;
+
+                    li{
+                        margin: 0;
+
+                        a{
+                            background: $light-color;
+                            color: $secondary-color;
+                            border: 0 none;
+                            @include default-hover();
+                            margin: 0 25px 0;
+                            padding: 15px 26px;
+                            border-radius: 10px;
+                            font-weight: 500;
+                        }
+
+                        &.active,&:hover{
+                            a{
+                                background: $primary-color;
+                                color: $light-color;
+                            }
+                        }
+
+                        &:after{
+                            content: '';
+                            width: 2px;
+                            height: 23px;
+                            background: $border-color;
+                            top: 50%;
+                            right: 0;
+                            margin-top: -11.5px;
+                            position: absolute;
+                        }
+
+                        &:first-child{
+                            a{
+                                margin-left: 0;
+                            }
+                        }
+
+                        &:last-child{
+                            a{
+                                margin-right: 0;
+                            }
+
+                            &:after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .tab-content{
+                    display: block;
+                    max-width: 1116px;
+                    margin: 0 auto;
+                    border: 2px solid $border-color-2;
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    .table{
+                        border: 0 none;
+                        thead tr th, thead tr td{
+                            &:last-child{
+                                border-right: 0 none;
+                            }
+                        }
+                        tbody tr td, tfoot tr td{
+                            &:last-child{
+                                border-right: 0 none;
+                            }
+                        }
+                    }
+                    
+
+                }
+            }
         }
     }
 }
