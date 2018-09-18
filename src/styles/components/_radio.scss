@@ -107,3 +107,55 @@
   }
 
 }
+
+.styled-radio.type-3{
+  padding: 8px 50px 8px 24px;
+  display: block;
+  text-align: left;
+
+  .styled-radio-box{
+    left: auto;
+    right: 30px;
+    width: 26px;
+    height: 26px;
+    border-width: 2px;
+    z-index: 345;
+    top: 50%;
+    margin-top: -13px;
+
+    &:after{
+      width: 10px;
+      height: 10px;
+      display: none;
+    }
+  }
+
+  .styled-radio-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 340;
+  }
+
+  .styled-radio-input:checked~.styled-radio-box {
+    background-color: $light-color;
+    
+    &::after{
+      display: block;
+    }
+  }
+
+  .styled-radio-input:checked~.styled-radio-bg{
+    background: $secondary-bg;
+    border-radius: 10px;
+  }
+  
+  .styled-radio-input:checked~.styled-radio-label{
+    color: $light-color;
+    position: relative;
+    z-index: 344;
+  }
+}

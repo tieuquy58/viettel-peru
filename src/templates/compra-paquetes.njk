@@ -22,6 +22,7 @@
           <label>Compra exitosa</label>
         </li>
       </ul>
+      <label class="lb-mobi"></label>
     </div>
     <div class="step-wrapper">
       <div class="step-title">
@@ -56,91 +57,296 @@
       <h1>Elige el paquete que deseas comprar</h1>
     </div>
     <div class="comprados-list">
-        <div class="page-sub-title">
-            <h4><span class="icon"></span>Paquetes mas comprados</h4>
-        </div>
-        <div class="list-item">
-            <ul class="row">
-                <li class="item col-xs-6 col-sm-6 col-md-3 active">
-                    <div class="content">
-                        <p class="title">Mimax 3</p>
-                        <p class="sub">Vigencia de 3 dias</p>
-                        <p class="price">Precio: <span>S/3.00</span></p>
-                        <a class="btn btn-default" href="#">COMPRAR</a>
-                    </div>
-                </li>
-                {% for i in range(0, 3) %}
-                <li class="item col-xs-6 col-sm-6 col-md-3">
-                    <div class="content">
-                        <p class="title">Mimax 3</p>
-                        <p class="sub">Vigencia de 3 dias</p>
-                        <p class="price">Precio: <span>S/3.00</span></p>
-                        <a class="btn btn-default" href="#">COMPRAR</a>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+      <div class="page-sub-title">
+        <h4><span class="icon"></span>Paquetes mas comprados</h4>
+      </div>
+      <div class="list-item">
+        <ul class="row">
+          <li class="item col-xs-6 col-sm-6 col-md-3 active">
+            <div class="content">
+              <p class="title">Mimax 3</p>
+              <p class="sub">Vigencia de 3 dias</p>
+              <p class="price">Precio: <span>S/3.00</span></p>
+              <a class="btn btn-default" href="#">COMPRAR</a>
+            </div>
+          </li>
+          {% for i in range(0, 3) %}
+          <li class="item col-xs-6 col-sm-6 col-md-3">
+            <div class="content">
+              <p class="title">Mimax 3</p>
+              <p class="sub">Vigencia de 3 dias</p>
+              <p class="price">Precio: <span>S/3.00</span></p>
+              <a class="btn btn-default" href="#">COMPRAR</a>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
     <div class="paquetes-list">
       <div class="page-sub-title">
-          <h4><span class="icon"></span>Todos nuestros paquetes</h4>
+        <h4><span class="icon"></span>Todos nuestros paquetes</h4>
       </div>
       <div class="list-item">
-          <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#todo-ilimitado" aria-controls="todo-ilimitado" role="tab" data-toggle="tab">Todo Ilimitado</a></li>
-              <li role="presentation"><a href="#paquetes-internet" aria-controls="paquetes-internet" role="tab" data-toggle="tab">Internet</a></li>
-              <li role="presentation"><a href="#paquetes-minutos" aria-controls="paquetes-minutos" role="tab" data-toggle="tab">Minutos</a></li>
-              <li role="presentation"><a href="#paquetes-entretenimiento" aria-controls="paquetes-entretenimiento" role="tab" data-toggle="tab">Entretenimiento</a></li>
-              <li role="presentation"><a href="#paquetes-mixtos" aria-controls="paquetes-mixtos" role="tab" data-toggle="tab">Mixtos y otros</a></li>
-          </ul>
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="todo-ilimitado">
-              <table class="table"> 
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#todo-ilimitado" aria-controls="todo-ilimitado" role="tab"
+              data-toggle="tab">Todo Ilimitado</a></li>
+          <li role="presentation"><a href="#paquetes-internet" aria-controls="paquetes-internet" role="tab" data-toggle="tab">Internet</a></li>
+          <li role="presentation"><a href="#paquetes-minutos" aria-controls="paquetes-minutos" role="tab" data-toggle="tab">Minutos</a></li>
+          <li role="presentation"><a href="#paquetes-entretenimiento" aria-controls="paquetes-entretenimiento" role="tab"
+              data-toggle="tab">Entretenimiento</a></li>
+          <li role="presentation"><a href="#paquetes-mixtos" aria-controls="paquetes-mixtos" role="tab" data-toggle="tab">Mixtos
+              y otros</a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="todo-ilimitado">
+            <div class="table-border">
+              <table class="table">
                 <thead>
                   <tr>
-                    <th>
-                        Nombre de paquete
+                    <th class="td-1">
+                      Nombre de paquete
                     </th>
-                    <th>
-                        Descripcion
+                    <th class="td-2 bg-des">
+                      Descripcion
                     </th>
-                    <th>
-                        Vigencia
+                    <th class="text-center td-3">
+                      Vigencia
                     </th>
-                    <th>
-                        Precio
+                    <th class="text-center td-4">
+                      Precio
                     </th>
-                    <th>
-                        Seleccionar
+                    <th class="text-center td-5">
+                      Seleccionar
                     </th>
                   </tr>
                 </thead>
                 <tbody>
+                  {% for i in range(0, 3) %}
                   <tr>
                     <td>
-1111
+                      <span class="name">FB1</span>
                     </td>
-                    <td>
-                      222
+                    <td class="bg-des">
+                      Facebook ilimitado
                     </td>
-                    <td>
-                      333
+                    <td class="td-vigen">
+                      1 Día
                     </td>
-                    <td colspan="2">
-                  444
+                    <td colspan="2" class="td-price">
+                      <label class="styled-radio type-3">
+                        <input type="radio" class="styled-radio-input" name="numberCheck" value="" />
+                        <span class="styled-radio-box"></span>
+                        <span class="styled-radio-bg"></span>
+                        <span class="styled-radio-label">S/3.00</span>
+                      </label>
                     </td>
                   </tr>
+                  {% endfor %}
                 </tbody>
               </table>
             </div>
-            <div role="tabpanel" class="tab-pane" id="paquetes-internet">...</div>
-            <div role="tabpanel" class="tab-pane" id="paquetes-minutos">...</div>
-            <div role="tabpanel" class="tab-pane" id="paquetes-entretenimiento">...</div>
-            <div role="tabpanel" class="tab-pane" id="paquetes-mixtos">...</div>
           </div>
+          <div role="tabpanel" class="tab-pane" id="paquetes-internet">
+            <div class="table-border">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="td-1">
+                      Nombre de paquete
+                    </th>
+                    <th class="td-2 bg-des">
+                      Descripcion
+                    </th>
+                    <th class="text-center td-3">
+                      Vigencia
+                    </th>
+                    <th class="text-center td-4">
+                      Precio
+                    </th>
+                    <th class="text-center td-5">
+                      Seleccionar
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in range(0, 3) %}
+                  <tr>
+                    <td>
+                      <span class="name">Mimax 3</span>
+                    </td>
+                    <td class="bg-des">
+                      Facebook ilimitado
+                    </td>
+                    <td class="td-vigen">
+                      1 Día
+                    </td>
+                    <td colspan="2" class="td-price">
+                      <label class="styled-radio type-3">
+                        <input type="radio" class="styled-radio-input" name="numberCheck" value="" />
+                        <span class="styled-radio-box"></span>
+                        <span class="styled-radio-bg"></span>
+                        <span class="styled-radio-label">S/3.00</span>
+                      </label>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="paquetes-minutos">
+            <div class="table-border">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="td-1">
+                      Nombre de paquete
+                    </th>
+                    <th class="td-2 bg-des">
+                      Descripcion
+                    </th>
+                    <th class="text-center td-3">
+                      Vigencia
+                    </th>
+                    <th class="text-center td-4">
+                      Precio
+                    </th>
+                    <th class="text-center td-5">
+                      Seleccionar
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in range(0, 3) %}
+                  <tr>
+                    <td>
+                      <span class="name">DATA MAX</span>
+                    </td>
+                    <td class="bg-des">
+                      Facebook ilimitado
+                    </td>
+                    <td class="td-vigen">
+                      1 Día
+                    </td>
+                    <td colspan="2" class="td-price">
+                      <label class="styled-radio type-3">
+                        <input type="radio" class="styled-radio-input" name="numberCheck" value="" />
+                        <span class="styled-radio-box"></span>
+                        <span class="styled-radio-bg"></span>
+                        <span class="styled-radio-label">S/3.00</span>
+                      </label>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="paquetes-entretenimiento">
+            <div class="table-border">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="td-1">
+                      Nombre de paquete
+                    </th>
+                    <th class="td-2 bg-des">
+                      Descripcion
+                    </th>
+                    <th class="text-center td-3">
+                      Vigencia
+                    </th>
+                    <th class="text-center td-4">
+                      Precio
+                    </th>
+                    <th class="text-center td-5">
+                      Seleccionar
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in range(0, 3) %}
+                  <tr>
+                    <td>
+                      <span class="name">DATA 5</span>
+                    </td>
+                    <td class="bg-des">
+                      Facebook ilimitado
+                    </td>
+                    <td class="td-vigen">
+                      1 Día
+                    </td>
+                    <td colspan="2" class="td-price">
+                      <label class="styled-radio type-3">
+                        <input type="radio" class="styled-radio-input" name="numberCheck" value="" />
+                        <span class="styled-radio-box"></span>
+                        <span class="styled-radio-bg"></span>
+                        <span class="styled-radio-label">S/3.00</span>
+                      </label>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <div role="tabpanel" class="tab-pane" id="paquetes-mixtos">
+            <div class="table-border">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="td-1">
+                      Nombre de paquete
+                    </th>
+                    <th class="td-2 bg-des">
+                      Descripcion
+                    </th>
+                    <th class="text-center td-3">
+                      Vigencia
+                    </th>
+                    <th class="text-center td-4">
+                      Precio
+                    </th>
+                    <th class="text-center td-5">
+                      Seleccionar
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in range(0, 3) %}
+                  <tr>
+                    <td>
+                      <span class="name">FB2</span>
+                    </td>
+                    <td class="bg-des">
+                      Facebook ilimitado
+                    </td>
+                    <td class="td-vigen">
+                      1 Día
+                    </td>
+                    <td colspan="2" class="td-price">
+                      <label class="styled-radio type-3">
+                        <input type="radio" class="styled-radio-input" name="numberCheck" value="" />
+                        <span class="styled-radio-box"></span>
+                        <span class="styled-radio-bg"></span>
+                        <span class="styled-radio-label">S/3.00</span>
+                      </label>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+        <div class="group-btns text-center">
+          <a href="./compra-paquetes-step-2.html" class="btn btn-yellow" title="CONTINUAR">CONTINUAR</a>
+        </div>
       </div>
-  </div>
+    </div>
   </div>
 </div>
 {% endblock %}

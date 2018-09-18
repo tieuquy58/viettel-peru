@@ -32,10 +32,17 @@
             .group-btn{
                 .btn{
                     display: inline-block;
+
+                    @media screen and (max-width: $screen-xs-min){
+                        width: 100%;
+                    }
                 }
 
                 .btn-volver{
                     min-width: 188px;
+                    @media screen and (max-width: $screen-xs-min){
+                        margin: 0 0 25px;
+                    }
                 }
 
                 .btn-paga{
@@ -47,6 +54,10 @@
                     padding: 15px 85px 15px 17px;
                     margin-left: 26px;
                     @include default-hover();
+
+                    @media screen and (max-width: $screen-xs-min){
+                        margin: 0;
+                    }
                     
                     span.icon{
                         background: url("../images/visa-name-white.png") no-repeat center center scroll #004075;
@@ -117,11 +128,27 @@
             border-right: 2px solid $border-color-2;
             padding-top: 28px;
             padding-bottom: 28px;
+            @media screen and (max-width: $screen-xs-max) {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            @media screen and (max-width: $screen-xs-min){
+                width: 100%;
+                border-right: 0 none;
+                border-bottom: 2px solid $border-color-2;
+            }
         }
 
         .col-2{
             padding-top: 28px;
             padding-bottom: 28px;
+            @media screen and (max-width: $screen-xs-max) {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            @media screen and (max-width: $screen-xs-min){
+                width: 100%;
+            }
         }
 
         label{
@@ -183,8 +210,15 @@
                 padding: 0;
             }
 
-            &:last-child{
-                margin-right: 0;
+            @media screen and (min-width: $screen-sm-min) {
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+
+            @media screen and (max-width: $screen-xs-max) {
+                margin-right: 14px;
+                margin-left: 14px;
             }
         }
 
@@ -258,6 +292,11 @@
             padding: 70px 85px 31px 85px;
             border-bottom: 2px dashed $border-color-2;
 
+            @media screen and (max-width: $screen-xs-max) {
+                padding: 33px 36px 5px 36px;
+            }
+
+
             ul{
                 padding: 0;
                 list-style: none;
@@ -266,6 +305,9 @@
                 li{
                     text-align: left;
                     margin-bottom: 39px;
+                    @media screen and (max-width: $screen-xs-max) {
+                        margin-bottom: 18px;
+                    }
                     
                     label{
                         font-weight: 400;

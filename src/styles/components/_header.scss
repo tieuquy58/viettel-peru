@@ -1,99 +1,167 @@
-.header-container{
+.header-container {
   background-color: $primary-color;
 
-  &.home-page{
+  &.home-page {
     @media (min-width: $screen-lg-min) {
-      .container{
+      .container {
         width: 1230px;
       }
     }
-    .container{
+
+    @media screen and (max-width: $screen-sm-max) {
+      background-color: $primary-color;
+    }
+
+    .container {
       background: url('../images/bkg-header.png') no-repeat right bottom scroll transparent;
       padding-top: 87px;
       padding-bottom: 94px;
 
-      .row{
+      @media screen and (max-width: $screen-xs-max) {
+        background: url('../images/bkg-header-mobile.png') no-repeat right bottom scroll transparent;
+        background-size: 280px;
+        padding-left: 86px;
+      }
+
+      .row {
         margin-left: -15px;
         margin-right: -15px;
 
-        .col-xs-12{
+        .col-logo {
+          width: auto;
+        }
+
+        .col-xs-12 {
           padding-left: 15px;
           padding-right: 15px;
         }
       }
 
-      h1.logo{
+      h1.logo {
         margin: 0 0 29px;
         padding: 0;
-        img{
+
+        img {
           width: auto;
         }
       }
-      
+
     }
-    
+
   }
 
-  .container{
+  @media screen and (max-width: $screen-xs-max) {
+    background-color: $yellow-color;
+  }
+
+  .container {
     width: 100%;
     padding-left: 35px;
     padding-right: 35px;
 
-    .row{
+    .row {
       margin-left: -35px;
       margin-right: -35px;
 
-      .col{
+      .col {
         padding-left: 35px;
         padding-right: 35px;
+
+        @media screen and (max-width: $screen-md-max) {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
       }
     }
 
-    h1.logo{
+    h1.logo {
       margin: 0;
       padding: 20px 0;
-      a{
+
+      @media screen and (max-width: $screen-xs-min){
+        padding: 10px 0
+      }
+
+      a {
         display: inline-block;
       }
-      img{
+
+      img {
         width: 86px;
       }
     }
 
-    h2.sub-text{
-      margin: 0 0  17px;
+    h2.sub-text {
+      margin: 0 0 17px;
       color: $yellow-color;
       font-size: 26.67px;
       font-weight: 300;
     }
 
-    h3.sub-text{
+    h3.sub-text {
       margin: 0;
       color: $light-color;
       font-weight: 300;
       font-size: 40px;
     }
 
-    .col-logo{
+    .col-logo {
       width: 23%;
       float: left;
       max-width: 310px;
+
+      @media screen and (max-width: $screen-md-max) {
+        width: 17%;
+      }
+
+      @media screen and (min-width: $screen-sm-min) {
+        img.mobi{
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        img.desk{
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: $screen-xs-min) {
+        img.mobi{
+          width: 60px;
+        }
+      }
+
+      
     }
 
-    .col-nav{
+    .col-nav {
       float: left;
       width: 77%;
 
-      .nav-bar{
+      @media screen and (max-width: $screen-md-max) {
+        width: 83%;
+      }
+
+      .nav-bar {
         display: block;
         list-style: none;
         margin: 0;
         padding: 0;
 
-        li{
+        @media screen and (max-width: $screen-sm-max) {
+          width: auto;
+          float: right;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+          margin-right: -15px;
+        }
+
+        li {
           float: left;
 
-          a{
+          a {
             display: block;
             border-left: 2px solid #3e97a4;
             padding: 29px 21px 29px 70px;
@@ -101,51 +169,186 @@
             color: $light-color;
             border-bottom: 3px solid transparent;
             @include default-transition();
+            
 
-            &:hover,&.focus{
-              background-color: #45a7b6!important;
-              border-bottom-color: $yellow-color;
+            @media screen and (max-width: $screen-xs-max) {
+              border-left-color: #dfcd3c;
+            }
+
+            &:hover,
+            &.focus {
+              @media screen and (min-width: $screen-sm-min) {
+                background-color: #45a7b6 !important;
+                border-bottom-color: $yellow-color;
+              }
+
+              @media screen and (max-width: $screen-xs-max) {
+                background-color: $secondary-bg !important;
+              }
+            }
+
+            @media screen and (max-width: $screen-md-max) {
+              padding: 29px 18px 29px 62px;
+            }
+
+            @media screen and (max-width: $screen-sm-max) {
+              background-position: center center !important;
+              padding: 39px 18px 38px 60px;
+
+              span {
+                display: none;
+              }
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+              padding: 28px 29px 28px 28px;
             }
           }
 
-          &.active{
-            > a{
-              background-color: #45a7b6!important;
-              border-bottom-color: $yellow-color;
+          &.active {
+            >a {
+              @media screen and (min-width: $screen-sm-min) {
+                background-color: #45a7b6 !important;
+                border-bottom-color: $yellow-color;
+              }
+
+              @media screen and (max-width: $screen-xs-max) {
+                background-color: $secondary-bg !important;
+              }
             }
           }
 
-          &.nav-mi{
-            a{
+          &.nav-mi {
+            a {
               background: url("../images/nav-bitel.png") no-repeat 13px center transparent;
               background-size: 48px auto;
+
+              @media screen and (max-width: $screen-xs-max) {
+                background: url("../images/nav-bitel-black.png") no-repeat center transparent;
+                background-size: 48px auto;
+
+                &:hover {
+                  background: url("../images/nav-bitel.png") no-repeat center transparent;
+                  background-size: 48px auto;
+                }
+              }
+
+              @media screen and (max-width: $screen-xs-min){
+                background-size: 34px auto!important;
+              }
+            }
+
+            &.active {
+              background: url("../images/nav-bitel.png") no-repeat center transparent;
+              background-size: 48px auto;
+
+              @media screen and (max-width: $screen-xs-min){
+                background-size: 34px auto!important;
+              }
             }
           }
 
-          &.nav-rec{
-            a{
+          &.nav-rec {
+            a {
               background: url("../images/nav-recargas.png") no-repeat 13px center transparent;
               background-size: 48px auto;
+
+              @media screen and (max-width: $screen-xs-max) {
+                background: url("../images/nav-recargas-black.png") no-repeat center transparent;
+                background-size: 48px auto;
+
+                &:hover {
+                  background: url("../images/nav-recargas.png") no-repeat center transparent;
+                  background-size: 48px auto;
+                }
+              }
+            }
+
+            &.active {
+              >a {
+                background: url("../images/nav-recargas.png") no-repeat center transparent;
+                background-size: 48px auto;
+
+                @media screen and (max-width: $screen-xs-min){
+                  background-size: 34px auto!important;
+                }
+              }
+            }
+            
+            @media screen and (max-width: $screen-xs-min){
+              background-size: 34px auto!important;
             }
           }
 
-          &.nav-com{
-            a{
+          &.nav-com {
+            a {
               background: url("../images/nav-paquetes.png") no-repeat 13px center transparent;
               background-size: 48px auto;
+
+              @media screen and (max-width: $screen-xs-max) {
+                background: url("../images/nav-paquetes-black.png") no-repeat center transparent;
+                background-size: 48px auto;
+
+                &:hover {
+                  background: url("../images/nav-paquetes.png") no-repeat center transparent;
+                  background-size: 48px auto;
+                }
+              }
+
+              @media screen and (max-width: $screen-xs-min){
+                background-size: 34px auto!important;
+              }
+            }
+
+            &.active {
+              >a {
+                background: url("../images/nav-paquetes.png") no-repeat center transparent;
+                background-size: 48px auto;
+
+                @media screen and (max-width: $screen-xs-min){
+                  background-size: 34px auto!important;
+                }
+              }
             }
           }
 
-          &.nav-ade{
-            a{
+          &.nav-ade {
+            a {
               background: url("../images/nav-saldo.png") no-repeat 13px center transparent;
               background-size: 48px auto;
               border-right: 2px solid #3e97a4;
+
+              @media screen and (max-width: $screen-xs-max) {
+                background: url("../images/nav-saldo-black.png") no-repeat center transparent;
+                background-size: 48px auto;
+                border-right: 0 none;
+
+                &:hover {
+                  background: url("../images/nav-saldo.png") no-repeat center transparent;
+                  background-size: 48px auto;
+                }
+              }
+
+              
+              @media screen and (max-width: $screen-xs-min){
+                background-size: 34px auto!important;
+              }
+            }
+
+            &.active {
+              >a {
+                background: url("../images/nav-saldo.png") no-repeat center transparent;
+                background-size: 48px auto;
+
+                @media screen and (max-width: $screen-xs-min){
+                  background-size: 34px auto!important;
+                }
+              }
             }
           }
         }
 
-        &:after{
+        &:after {
           content: '';
           clear: both;
           display: table;

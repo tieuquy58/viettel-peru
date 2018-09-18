@@ -2,9 +2,55 @@
 {% set pageTitle = 'Compra Paquetes' %}
 {% set bodyClasses = 'compra-index-index' %}
 {% block content %}
-  <div class="main-content compra-page step-3">
-      <div class="container">
-          demo content
+<div class="main-content compra-page step-3">
+  <div class="container">
+    <div class="page-title">
+      <h1>Compra Paquetes</h1>
+    </div>
+    <div class="progress-step">
+      <ul>
+        <li class="step-1 active success">
+          <span>1</span>
+          <label>Elige tu paquete</label>
+        </li>
+        <li class="step-2 active success">
+          <span>2</span>
+          <label>Comfirma tu compra</label>
+        </li>
+        <li class="step-3 active">
+          <span>3</span>
+          <label>Compra exitosa</label>
+        </li>
+      </ul>
+      <label class="lb-mobi"></label>
+    </div>
+    <div class="step-wrapper">
+      <div class="step-title">
+            <img alt="Step Success" src="assets/images/bkg-checked.png" />
+            <h2>¡Felicidades! Tu compra de paquete <br/> se ha realizado con éxito</h2>
       </div>
+      <div class="step-content">
+            <div class="shadow-box">
+                <div class="content top">
+                    <div class="col-1">
+                        <label>Número</label>
+                        <span>961 930 499</span>
+                    </div>
+                    <div class="col-2">
+                            <label>Costo del paquete</label>
+                            <span>S/3.00</span>
+                    </div>
+                </div>
+                <div class="content bot">
+                    <h4>Recibirás un SMS y un correo electrónico con la confirmación de tu compra</h4>
+                    <p><a href="mailto:enrique.santillana@gmail.com" title="send mail to enrique.santillana@gmail.com">enrique.santillana@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="group-btns">
+                <a href="./compra-paquetes.html" title="COMPRAR MÁS PAQUETES" class="btn btn-yellow">COMPRAR MÁS PAQUETES</a>
+            </div>
+      </div>
+    </div>
   </div>
+</div>
 {% endblock %}

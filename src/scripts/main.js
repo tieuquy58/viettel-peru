@@ -57,6 +57,12 @@ window.GicoScript = (() => {
 
     });
   }
+
+  const InitMobiLabelProgressStep = () =>{
+    var obj = $('.progress-step li.active > label');
+    var elem = obj[obj.length-1];
+    $('.lb-mobi').text(elem.innerHTML);
+  }
     
   const init = () => {
     /* Fix IE */
@@ -64,6 +70,7 @@ window.GicoScript = (() => {
     initCategoryList();
     initSelectOne();
     initCheckPagaPopup();
+    InitMobiLabelProgressStep();
   };
 
   return {init};
