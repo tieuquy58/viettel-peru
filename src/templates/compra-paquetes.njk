@@ -61,26 +61,26 @@
         <h4><span class="icon"></span>Paquetes mas comprados</h4>
       </div>
       <div class="list-item">
-        <ul class="row">
-          <li class="item col-xs-6 col-sm-6 col-md-3 active">
+        <div class="row">
+          <div class="item col-xs-6 col-sm-6 col-md-3 active">
             <div class="content">
               <p class="title">Mimax 3</p>
               <p class="sub">Vigencia de 3 dias</p>
               <p class="price">Precio: <span>S/3.00</span></p>
               <a class="btn btn-default" href="#">COMPRAR</a>
             </div>
-          </li>
+          </div>
           {% for i in range(0, 3) %}
-          <li class="item col-xs-6 col-sm-6 col-md-3">
+          <div class="item col-xs-6 col-sm-6 col-md-3">
             <div class="content">
               <p class="title">Mimax 3</p>
               <p class="sub">Vigencia de 3 dias</p>
               <p class="price">Precio: <span>S/3.00</span></p>
               <a class="btn btn-default" href="#">COMPRAR</a>
             </div>
-          </li>
+          </div>
           {% endfor %}
-        </ul>
+        </div>
       </div>
     </div>
     <div class="paquetes-list">
@@ -88,6 +88,13 @@
         <h4><span class="icon"></span>Todos nuestros paquetes</h4>
       </div>
       <div class="list-item">
+        <select role="tablist" class="tabs-select">
+          <option value="#todo-ilimitado" aria-controls="todo-ilimitado" role="tab" data-toggle="tab">Todo Ilimitado</option>
+          <option value="#paquetes-internet" aria-controls="paquetes-internet" role="tab" data-toggle="tab">Internet</option>
+          <option value="#paquetes-minutos" aria-controls="paquetes-minutos" role="tab" data-toggle="tab">Minutos</option>
+          <option value="#paquetes-entretenimiento" aria-controls="paquetes-entretenimiento" role="tab" data-toggle="tab">Entretenimiento</option>
+          <option value="#paquetes-mixtos" aria-controls="paquetes-mixtos" role="tab" data-toggle="tab">Mixtos y otros</option>  
+        </select>
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active"><a href="#todo-ilimitado" aria-controls="todo-ilimitado" role="tab"
               data-toggle="tab">Todo Ilimitado</a></li>

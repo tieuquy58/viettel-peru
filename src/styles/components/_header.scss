@@ -201,7 +201,7 @@
             }
 
             @media screen and (max-width: $screen-xs-min) {
-              padding: 28px 29px 28px 28px;
+              padding: 28px 25px 28px;
             }
           }
 
@@ -234,7 +234,7 @@
               }
 
               @media screen and (max-width: $screen-xs-min){
-                background-size: 34px auto!important;
+                background-size: 32px auto!important;
               }
             }
 
@@ -243,7 +243,7 @@
               background-size: 48px auto;
 
               @media screen and (max-width: $screen-xs-min){
-                background-size: 34px auto!important;
+                background-size: 32px auto!important;
               }
             }
           }
@@ -262,6 +262,10 @@
                   background-size: 48px auto;
                 }
               }
+
+              @media screen and (max-width: $screen-xs-min){
+                background-size: 32px auto!important;
+              }
             }
 
             &.active {
@@ -270,13 +274,13 @@
                 background-size: 48px auto;
 
                 @media screen and (max-width: $screen-xs-min){
-                  background-size: 34px auto!important;
+                  background-size: 32px auto!important;
                 }
               }
             }
             
             @media screen and (max-width: $screen-xs-min){
-              background-size: 34px auto!important;
+              background-size: 32px auto!important;
             }
           }
 

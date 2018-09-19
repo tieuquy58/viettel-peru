@@ -10,6 +10,7 @@ window.GicoScript = (() => {
     }
   };
 
+
   const initFilter = () => {
     if (utils.isMobile()) {
       $('.filter-body').collapse('hide');
@@ -58,10 +59,47 @@ window.GicoScript = (() => {
     });
   }
 
-  const InitMobiLabelProgressStep = () =>{
+  const initMobiLabelProgressStep = () =>{
     var obj = $('.progress-step li.active > label');
     var elem = obj[obj.length-1];
     $('.lb-mobi').text(elem.innerHTML);
+  }
+
+  const initSelectTabs = () => {
+    $('.tabs-select').on('change',function(){
+      var id = $(this).val();
+      $('a[href="' + id + '"]').tab('show');
+    });
+  }
+
+  const initRadioCheckedTR = () => {
+    $('.paquetes-list .table tr').on('click', function(){
+      $('.paquetes-list .table tr').removeClass('checked');
+      $(this).addClass('checked');
+      $(this).find('.styled-radio-input').prop('checked',true);
+    });
+  }
+
+
+  const initCarousel = () => {
+    var windowWidth = $(window).width();
+    if(windowWidth < 768){
+      $('.comprados-list .list-item div.row').addClass('owl-carousel');
+      $('.comprados-list .list-item div.row').addClass('owl-theme');
+      $('.comprados-list .list-item div.row').owlCarousel({
+        loop:true,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+      });
+    }else{
+      $('.comprados-list .list-item div.row').removeClass('owl-carousel');
+      $('.comprados-list .list-item div.row').removeClass('owl-theme');
+      $('.comprados-list .list-item div.row').trigger('destroy.owl.carousel')
+    }
   }
     
   const init = () => {
@@ -70,12 +108,17 @@ window.GicoScript = (() => {
     initCategoryList();
     initSelectOne();
     initCheckPagaPopup();
-    InitMobiLabelProgressStep();
+    initMobiLabelProgressStep();
+    initSelectTabs();
+    initRadioCheckedTR();
   };
 
-  return {init};
+  return {init,initCarousel};
 })();
 
 $('document').ready(() => {
   window.GicoScript.init();
 });
+$(window).on('resize load',function(){
+  window.GicoScript.initCarousel();
+})

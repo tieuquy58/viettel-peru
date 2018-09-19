@@ -107,6 +107,10 @@
             color: $primary-color;
             font-size: 26.5px;
             text-align: center;
+
+            @media screen and (max-width: $screen-xs-min){
+                font-size: 21px;
+            }
         }
     }
 
@@ -274,6 +278,11 @@
 
             label{
                 display: block;
+
+                @media screen and (max-width: $screen-xs-min){
+                    font-size: 16px;
+                    text-align: left;
+                }
             }
         }
 

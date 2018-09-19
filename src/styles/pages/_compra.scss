@@ -15,11 +15,20 @@
             text-align: center;
             border-radius: 10px;
 
+            @media screen and (max-width: $screen-xs-max){
+                padding: 37px 30px;
+                width: 100%;
+            }
+
             input.form-control{
                 display: inline-block;
                 border: 2px solid $primary-color;
-                margin: 0 0 25px;
                 vertical-align: top;
+
+                @media screen and (max-width: $screen-xs-max){
+                    display: block;
+                    margin: 0 auto 13px;
+                }
             }
 
             button.btn{
@@ -27,6 +36,12 @@
                 padding: 12px 20px;
                 margin: 0 0 25px 18px;
                 vertical-align: top;
+
+                @media screen and (max-width: $screen-xs-max){
+                    display: block;
+                    margin: 0 auto 25px;
+                }
+
             }
         }
 
@@ -213,7 +228,7 @@
                     margin-left: -26px;
                     margin-right: -26px;
 
-                    li{
+                    div.item{
                         margin-bottom: 35px;
                         padding-left: 26px;
                         padding-right: 26px;
@@ -291,6 +306,80 @@
                             }
                         }
                     }
+
+                    &.owl-carousel{
+                       margin-left: 0;
+                       margin-right: 0; 
+
+                       .item{
+                           width: 100%;
+                           max-width: 240px;
+                           display: block;
+                           margin: 0 auto;
+                           float: none;
+                           padding: 0;
+                       }
+
+                       .owl-dots{
+                           margin: 15px 0 25px;
+
+                           span{
+                               background: $border-color-2;
+                               width: 18px;
+                               height: 18px;
+
+                               @media screen and (max-width: $screen-xs-min){
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                           }
+
+                           .active{
+                               span {
+                                   background: $secondary-bg;
+                               }
+                           }
+
+                       }
+
+                       .owl-nav{
+                           margin: 0;
+
+                           [class*='owl-']{
+                               position: absolute;
+                               top: 50%;
+                               font-size: 14px;
+                               border-radius: 0;
+                               margin: -91px 0 0;
+                               line-height: 1;
+                               display: block;
+                               overflow: hidden;
+                               text-indent: -9999em;
+                               width: 40px;
+                               height: 75px;
+
+                               @media screen and (max-width: $screen-xs-min){
+                                    width: 28px;
+                                }
+
+                               &:hover{
+                                   opacity: 0.8;
+                               }
+                           }
+
+                           .owl-prev{
+                                left: 0;
+                                background: url("../images/slider-prev.png") no-repeat center scroll transparent;
+                                background-size: contain;
+                           }
+
+                           .owl-next{
+                                right: 0;
+                                background: url("../images/slider-next.png") no-repeat center scroll transparent;
+                                background-size: contain;
+                           }
+                       }
+                    }
                 }
             }
         }
@@ -307,12 +396,33 @@
             .list-item{
                 padding: 0 15px;
 
+                .tabs-select{
+                    display: none;
+
+                    @media screen and (max-width: $screen-xs-max){
+                        display: block;
+                        border: 2px solid $border-color-2;
+                        box-shadow: 0 0 6px 1px $border-color-2;
+                        width: 100%;
+                        border-radius: 10px;
+                        padding: 5px 20px;
+                        height: 50px;
+                        margin: 0 0 20px;
+                        color: $secondary-color;
+                    }
+                }
+
                 .nav-tabs{
                     border: 2px solid $primary-color;
                     border-radius: 10px;
                     padding: 12px;
                     max-width: 1116px;
                     margin: 0 auto 23px;
+
+                    @media screen and (max-width: $screen-xs-max){
+                        display: none;
+                    }
+                    
 
                     li{
                         margin: 0;
@@ -383,6 +493,11 @@
                         border: 2px solid $border-color-2;
                         border-radius: 10px;
                         overflow: hidden;
+
+                        @media screen and (max-width: $screen-xs-max){
+                            border: 0 none;
+                        }
+
                     }
 
                     .table{
@@ -447,6 +562,71 @@
                             color: $orange-color;
                             font-size: 21px;
                         }
+
+                        @media screen and (max-width: $screen-xs-max){
+                            thead tr{
+                                display: none;
+                            }
+
+                            tbody tr{
+                                margin: 0 0 10px;
+                                border: 2px solid $border-color-2;
+                                border-radius: 10px;
+                                cursor: pointer;
+                                position: relative;
+
+                                .styled-radio{
+                                    position: static;
+                                    padding: 0;
+
+                                    .styled-radio-label{
+                                        bottom: 15px;
+                                        left: 145px;
+                                        color: $secondary-bg;
+                                        position: absolute;
+                                    }
+
+                                    .styled-radio-box{
+                                        top: 29px;
+                                        right: 19px;
+                                    }
+
+                                    .styled-radio-bg{
+                                        display: none;
+                                    }
+
+                                }
+
+                                &.checked{
+                                    border-color: $secondary-bg;
+                                    background-color: #fafeff;
+                                }
+
+                                td:first-child{
+                                    padding-top: 18px;
+                                }
+
+                                td.td-vigen{
+                                    text-align: left;
+                                    padding-bottom: 18px;
+                                }
+
+                                td.td-price{
+                                    display: inline;
+                                    padding: 0;
+                                }
+                            }
+
+                            tbody tr td{
+                                border: 0 none;
+                                padding: 6px 33px;
+                            }
+                            
+                            tbody tr, tbody td{
+                                display: block;
+                            }
+                            
+                        }
                     }
                     
 
@@ -481,12 +661,21 @@
             .data-top{
                 padding: 27px 32px;
 
+                @media screen and (max-width: $screen-xs-max){
+                    padding: 21px 24px;
+                }
+
                 .name{
                     margin: 6px 0 0;
                     float: left;
                     color: $secondary-bg;
                     font-size: 24px;
                     font-weight: 500;
+
+                    @media screen and (max-width: $screen-xs-max){
+                        font-size: 21px;
+                    }
+    
                 }
 
                 .lb{
@@ -502,6 +691,10 @@
                     span{
                         font-weight: 500;
                     }
+
+                    @media screen and (max-width: $screen-xs-max){
+                        font-size: 14px;
+                    }
                 }
 
                 p{
@@ -512,6 +705,9 @@
                     font-weight: 500;
                     padding: 14px 0;
                     margin: 0;
+                    @media screen and (max-width: $screen-xs-max){
+                        font-size: 15px;
+                    }
                 }
                 
                 .ct-desc{
@@ -519,6 +715,9 @@
                     text-align: left;
                     color: $secondary-color;
                     font-size: 17px;
+                    @media screen and (max-width: $screen-xs-max){
+                        font-size: 15px;
+                    }
                 }
             }
 
@@ -553,6 +752,11 @@
                             border-bottom: 2px solid $border-color-2;
                             border-right: 0 none;
                         }
+
+                        @media screen and (max-width: $screen-xs-max){
+                            text-align: left;
+                            padding: 15px 24px;
+                        }
                     }
 
                     .col-2{
@@ -562,6 +766,11 @@
 
                         @media screen and (max-width: $screen-sm-min){
                             width: 100%;
+                        }
+
+                        @media screen and (max-width: $screen-xs-max){
+                            text-align: left;
+                            padding: 15px 24px;
                         }
                     }
                 }
@@ -594,6 +803,11 @@
 
                 .btn-volver{
                     min-width: 188px;
+
+                    @media screen and (max-width: $screen-xs-min){
+                        margin: 0 0 20px;
+                    }
+
                 }
 
                 .btn-paga{
@@ -615,6 +829,11 @@
                         bottom: 0;
                         width: 68px;
                         right: 0;
+                    }
+
+                    @media screen and (max-width: $screen-xs-min){
+                        margin-left: 0;
+                        margin-bottom: 20px;
                     }
                 }
 
