@@ -62,7 +62,7 @@ window.GicoScript = (() => {
   const initMobiLabelProgressStep = () =>{
     var obj = $('.progress-step li.active > label');
     var elem = obj[obj.length-1];
-    $('.lb-mobi').text(elem.innerHTML);
+    $('.lb-mobi').text($(elem).text());
   }
 
   const initSelectTabs = () => {
