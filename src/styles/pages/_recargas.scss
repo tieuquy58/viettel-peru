@@ -157,9 +157,9 @@
 
         label{
             display: block;
-            color: $primary-color;
+            color: $secondary-bg;
             font-size: 18.5px;
-            font-weight: 400;
+            font-weight: 500;
             margin: 0 0 8px;
         }
 
@@ -181,7 +181,7 @@
                 background-size: 20px 33px;
                 max-width: 294px;
                 padding-left: 73px;
-                padding-right: 15px;
+                padding-right: 12px;
             }
 
             &.form-group{
@@ -201,7 +201,7 @@
                 background: url("../images/bkg-input-monto.png") no-repeat 20px center scroll $light-color;
                 background-size: 29px;
                 padding-left: 62px;
-                padding-right: 15px;
+                padding-right: 12px;
             }
         }
 
@@ -320,7 +320,7 @@
                     
                     label{
                         font-weight: 400;
-                        color: $primary-color;
+                        color: $secondary-bg;
                         display: block;
                         font-size: 17.5px;
                     }

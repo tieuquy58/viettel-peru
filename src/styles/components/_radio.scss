@@ -33,6 +33,7 @@
 
   a{
     color: $dark-color;
+    text-decoration: underline;
     @include default-hover();
   }
 }

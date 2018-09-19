@@ -239,7 +239,7 @@
             }
 
             &.active {
-              background: url("../images/nav-bitel.png") no-repeat center transparent;
+              background: url("../images/nav-bitel.png") no-repeat 13px center transparent;
               background-size: 48px auto;
 
               @media screen and (max-width: $screen-xs-min){
@@ -270,7 +270,7 @@
 
             &.active {
               >a {
-                background: url("../images/nav-recargas.png") no-repeat center transparent;
+                background: url("../images/nav-recargas.png") no-repeat 13px center transparent;
                 background-size: 48px auto;
 
                 @media screen and (max-width: $screen-xs-min){
@@ -306,7 +306,7 @@
 
             &.active {
               >a {
-                background: url("../images/nav-paquetes.png") no-repeat center transparent;
+                background: url("../images/nav-paquetes.png") no-repeat 13px center transparent;
                 background-size: 48px auto;
 
                 @media screen and (max-width: $screen-xs-min){
@@ -341,7 +341,7 @@
 
             &.active {
               >a {
-                background: url("../images/nav-saldo.png") no-repeat center transparent;
+                background: url("../images/nav-saldo.png") no-repeat 13px center transparent;
                 background-size: 48px auto;
 
                 @media screen and (max-width: $screen-xs-min){
